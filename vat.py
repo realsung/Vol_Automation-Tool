@@ -18,7 +18,7 @@ def getSystemInfo():
 			line = line.split(":")[1]
 			line = line.split(",")[0]
 			line = line.strip()
-			print "** System Profile : " + line
+			print("[*] System Profile : " + line)
 
 			return line
 
@@ -40,3 +40,4 @@ if option.object == None:
 	info = "--profile="
 	info += getSystemInfo()
 	os.system("echo >> analysis.txt")
+
