@@ -2,18 +2,29 @@
 # -*- coding: UTF-8 -*-
 # 2018/11/05 START
 # How to Use?
-# $ python vat.py -f [FILE]
-# v1.0
+# $ python vap.py -f [FILE]
 
 import os
 import sys
 from optparse import OptionParser 
-if(len(sys.argv) <= 1): # 인자 값이 1이상이여야 한다.
-	print("HELP : python vat.py -h 또는 --help")
+if(len(sys.argv) <= 1): # 인자 값이 1이상
+	print("HELP : python vap.py -h 또는 --help")
 	exit()
 
-parser = OptionParser('''python vat.py -f [FILE]''')
+def getSystemInfo():
+	f = open("analysis.txt")
+	for line in f.readlines():
+		if(line.find("Suggested")!=-1):
+			line = line.split(":")[1]
+			line = line.split(",")[0]
+			line = line.strip()
+			print "** System Profile : " + line
+
+			return line
+
+parser = OptionParser('''python vap.py -f [FILE]''')
 parser.add_option("-f","--file",type="string",dest="FILE",help="write report to FILE")
+parser.add_option("-o","--object",type="string",dest="object",help="write report to ADDRESS")
 (option,args) = parser.parse_args()
 
 file = option.FILE
@@ -22,9 +33,10 @@ if option == None:
 	print(parser.usage)
 	exit()
 
-if option.FILE:
-	print os.system("vol.py -f " + file + " imageinfo > " + file + "_imageinfo.txt")
-	# print os.system("vol.py -f " + file + " pstree > " + file + "_pstree.txt")
-	# print os.system("vol.py -f " + file + " netscan > " + file + "_netscan.txt")
-	# print os.system("vol.py -f " + file + " mfsparser > " + file + "_mfsparser.txt")
-	# print os.system("vol.py -f " + file + " filescan > " + file + "_filescan.txt")
+
+if option.object == None:
+	os.system("echo 1.imageinfo ================================== > analysis.txt")
+	os.system("vol.py -f " + file + " imageinfo >> analysis.txt")
+	info = "--profile="
+	info += getSystemInfo()
+	os.system("echo >> analysis.txt")
