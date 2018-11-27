@@ -1,0 +1,139 @@
+1.imageinfo
+          Suggested Profile(s) : Win7SP1x86_23418, Win7SP0x86, Win7SP1x86
+                     AS Layer1 : IA32PagedMemoryPae (Kernel AS)
+                     AS Layer2 : FileAddressSpace (/Users/realsung/Desktop/major/Vol_Automation-Tool/file1.vmem)
+                      PAE type : PAE
+                           DTB : 0x185000L
+                          KDBG : 0x82b29c30L
+          Number of Processors : 1
+     Image Type (Service Pack) : 1
+                KPCR for CPU 0 : 0x82b2ac00L
+             KUSER_SHARED_DATA : 0xffdf0000L
+           Image date and time : 2018-10-29 10:06:40 UTC+0000
+     Image local date and time : 2018-10-29 03:06:40 -0700
+
+
+2.psxview
+Offset(P)  Name                    PID pslist psscan thrdproc pspcid csrss session deskthrd ExitTime
+---------- -------------------- ------ ------ ------ -------- ------ ----- ------- -------- --------
+0x3e4ef030 wlms.exe               1568 True   False  True     True   True  True    True     
+0x3e7c4d40 audiodg.exe             984 True   False  True     True   True  True    True     
+0x3e6b4c88 svchost.exe             668 True   False  True     True   True  True    True     
+0x3e5c4d40 dllhost.exe             696 True   False  True     True   True  True    True     
+0x3e552390 dllhost.exe            1760 True   False  True     True   True  True    True     
+0x26eb1b18 svchost.exe             804 True   False  True     True   True  True    True     
+0x3e558d40 sppsvc.exe             1876 True   False  True     True   True  True    True     
+0x3ef02610 svchost.exe            3876 True   False  True     True   True  True    True     
+0x3e7b5030 svchost.exe             924 True   False  True     True   True  True    True     
+0x3f5b1a60 SearchIndexer.         3664 True   False  True     True   True  True    True     
+0x3e75bd40 svchost.exe             720 True   False  True     True   True  True    True     
+0x3e40f030 spoolsv.exe            1228 True   False  True     True   True  True    True     
+0x3f18cd40 SearchProtocol         3800 True   False  True     True   True  True    True     
+0x3e482030 vmicsvc.exe            1420 True   False  True     True   True  True    True     
+0x3eeb0b18 notepad.exe            3628 True   False  True     True   True  True    True     
+0x3e6aab18 vmtoolsd.exe           3244 True   False  True     True   True  True    True     
+0x3eedeb18 SearchFilterHo         3760 True   False  True     True   True  True    True     
+0x3e6bc030 services.exe            476 True   False  True     True   True  True    False    
+0x3e475d40 vmicsvc.exe            1368 True   False  True     True   True  True    True     
+0x3eeef680 mspaint.exe            3848 True   False  True     True   True  True    True     
+0x3e6bf740 lsass.exe               492 True   False  True     True   True  True    False    
+0x3e6c3340 lsm.exe                 500 True   False  True     True   True  True    True     
+0x3e4924a0 vmicsvc.exe            1448 True   False  True     True   True  True    True     
+0x3e660030 wininit.exe             376 True   False  True     True   True  True    True     
+0x3d817800 taskhost.exe           3040 True   False  True     True   True  True    True     
+0x3e2de6d0 VSSVC.exe              2684 True   False  True     True   True  True    True     
+0x3e2b38f8 winlogon.exe           2880 True   False  True     True   True  True    True     
+0x3e4a0cd8 msdtc.exe              2132 True   False  True     True   True  True    True     
+0x3e20d730 svchost.exe             600 True   False  True     True   True  True    True     
+0x3e4264e0 svchost.exe            1264 True   False  True     True   True  True    True     
+0x3e47fa10 vmicsvc.exe            1396 True   False  True     True   True  True    True     
+0x3e7a8030 svchost.exe             888 True   False  True     True   True  True    True     
+0x3e2029f8 explorer.exe           3140 True   False  True     True   True  True    True     
+0x3e2a5110 dwm.exe                3128 True   False  True     True   True  True    True     
+0x3e7f5d40 svchost.exe            1148 True   False  True     True   True  True    True     
+0x3ee9bd40 vmtoolsd.exe           1520 True   False  True     True   True  True    True     
+0x3e4747f8 vmicsvc.exe            1348 True   False  True     True   True  True    True     
+0x3e2dab20 csrss.exe              2852 True   False  True     True   False True    True     
+0x3ff6e020 System                    4 True   False  True     True   False False   False    
+0x3e990030 csrss.exe               336 True   False  True     True   False True    True     
+0x3e3f87f0 smss.exe                240 True   False  True     True   False False   False    
+
+
+3.pstree
+Name                                                  Pid   PPid   Thds   Hnds Time
+-------------------------------------------------- ------ ------ ------ ------ ----
+ 0x86790030:csrss.exe                                 336    312      9    465 2018-10-30 03:04:42 UTC+0000
+ 0x86860030:wininit.exe                               376    312      3     75 2018-10-30 03:04:42 UTC+0000
+. 0x868c3340:lsm.exe                                  500    376     11    207 2018-10-30 03:04:42 UTC+0000
+. 0x868bc030:services.exe                             476    376     10    223 2018-10-30 03:04:42 UTC+0000
+.. 0x86a82030:vmicsvc.exe                            1420    476      5     80 2018-10-30 03:04:43 UTC+0000
+.. 0x868b4c88:svchost.exe                             668    476      6    265 2018-10-30 03:04:42 UTC+0000
+.. 0x86aef030:wlms.exe                               1568    476      4     45 2018-10-30 03:04:44 UTC+0000
+.. 0x8cc65b18:svchost.exe                             804    476     20    447 2018-10-30 03:04:43 UTC+0000
+... 0x86ca5110:dwm.exe                               3128    804      4     71 2018-10-29 10:05:00 UTC+0000
+.. 0x86a924a0:vmicsvc.exe                            1448    476      5     81 2018-10-30 03:04:43 UTC+0000
+.. 0x869b5030:svchost.exe                             924    476     33    864 2018-10-30 03:04:43 UTC+0000
+.. 0x86102610:svchost.exe                            3876    476      7    104 2018-10-29 10:05:07 UTC+0000
+.. 0x86bc4d40:dllhost.exe                             696    476     18    199 2018-10-29 10:04:44 UTC+0000
+.. 0x85bb1a60:SearchIndexer.                         3664    476     13    635 2018-10-29 10:05:06 UTC+0000
+... 0x85f8cd40:SearchProtocol                        3800   3664      6    265 2018-10-29 10:05:07 UTC+0000
+... 0x860deb18:SearchFilterHo                        3760   3664      3     77 2018-10-29 10:05:07 UTC+0000
+.. 0x87617800:taskhost.exe                           3040    476     10    195 2018-10-29 10:05:00 UTC+0000
+.. 0x86a747f8:vmicsvc.exe                            1348    476      8    106 2018-10-30 03:04:43 UTC+0000
+.. 0x86a0f030:spoolsv.exe                            1228    476     13    317 2018-10-30 03:04:43 UTC+0000
+.. 0x86b58d40:sppsvc.exe                             1876    476      5    147 2018-10-29 10:04:44 UTC+0000
+.. 0x8609bd40:vmtoolsd.exe                           1520    476     11    270 2018-10-30 03:04:44 UTC+0000
+.. 0x86a75d40:vmicsvc.exe                            1368    476      9    129 2018-10-30 03:04:43 UTC+0000
+.. 0x86b52390:dllhost.exe                            1760    476     21    194 2018-10-29 10:04:44 UTC+0000
+.. 0x8695bd40:svchost.exe                             720    476     18    356 2018-10-30 03:04:42 UTC+0000
+... 0x869c4d40:audiodg.exe                            984    720      6    120 2018-10-30 03:04:43 UTC+0000
+.. 0x86c0d730:svchost.exe                             600    476     11    371 2018-10-30 03:04:42 UTC+0000
+.. 0x86cde6d0:VSSVC.exe                              2684    476      7    118 2018-10-29 10:04:50 UTC+0000
+.. 0x86a264e0:svchost.exe                            1264    476     20    307 2018-10-30 03:04:43 UTC+0000
+.. 0x86a7fa10:vmicsvc.exe                            1396    476      4     66 2018-10-30 03:04:43 UTC+0000
+.. 0x869a8030:svchost.exe                             888    476     15    506 2018-10-30 03:04:43 UTC+0000
+.. 0x86aa0cd8:msdtc.exe                              2132    476     15    153 2018-10-29 10:04:47 UTC+0000
+.. 0x869f5d40:svchost.exe                            1148    476     21    510 2018-10-30 03:04:43 UTC+0000
+. 0x868bf740:lsass.exe                                492    376      7    470 2018-10-30 03:04:42 UTC+0000
+ 0x851ae020:System                                      4      0     79    389 2018-10-30 03:04:38 UTC+0000
+. 0x86df87f0:smss.exe                                 240      4      2     29 2018-10-30 03:04:38 UTC+0000
+ 0x86c029f8:explorer.exe                             3140   3120     26    670 2018-10-29 10:05:00 UTC+0000
+. 0x860ef680:mspaint.exe                             3848   3140      8    317 2018-10-29 10:05:07 UTC+0000
+. 0x860b0b18:notepad.exe                             3628   3140     14    307 2018-10-29 10:05:04 UTC+0000
+. 0x868aab18:vmtoolsd.exe                            3244   3140      7    215 2018-10-29 10:05:00 UTC+0000
+ 0x86cb38f8:winlogon.exe                             2880   2844      4    113 2018-10-29 10:04:56 UTC+0000
+ 0x86cdab20:csrss.exe                                2852   2844      9    217 2018-10-29 10:04:56 UTC+0000
+
+
+4.netscan
+Offset(P)          Proto    Local Address                  Foreign Address      State            Pid      Owner          Created
+0x3e4b1a10         UDPv4    0.0.0.0:0                      *:*                                   492      lsass.exe      2018-10-30 03:04:44 UTC+0000
+0x3e4b1a10         UDPv6    :::0                           *:*                                   492      lsass.exe      2018-10-30 03:04:44 UTC+0000
+0x3e5228d8         UDPv4    0.0.0.0:0                      *:*                                   492      lsass.exe      2018-10-30 03:04:44 UTC+0000
+0x3e6f26d0         UDPv4    0.0.0.0:0                      *:*                                   1148     svchost.exe    2018-10-30 03:04:43 UTC+0000
+0x3e6f26d0         UDPv6    :::0                           *:*                                   1148     svchost.exe    2018-10-30 03:04:43 UTC+0000
+0x3e204f60         TCPv4    0.0.0.0:49156                  0.0.0.0:0            LISTENING        492      lsass.exe      
+0x3e204f60         TCPv6    :::49156                       :::0                 LISTENING        492      lsass.exe      
+0x3e4012a0         TCPv4    0.0.0.0:49154                  0.0.0.0:0            LISTENING        924      svchost.exe    
+0x3e405350         TCPv4    0.0.0.0:49154                  0.0.0.0:0            LISTENING        924      svchost.exe    
+0x3e405350         TCPv6    :::49154                       :::0                 LISTENING        924      svchost.exe    
+0x3e54ad98         TCPv4    0.0.0.0:49155                  0.0.0.0:0            LISTENING        476      services.exe   
+0x3e54ad98         TCPv6    :::49155                       :::0                 LISTENING        476      services.exe   
+0x3e5747d0         TCPv4    0.0.0.0:3389                   0.0.0.0:0            LISTENING        1148     svchost.exe    
+0x3e5cec90         TCPv4    0.0.0.0:49156                  0.0.0.0:0            LISTENING        492      lsass.exe      
+0x3e5e7a28         TCPv4    0.0.0.0:3389                   0.0.0.0:0            LISTENING        1148     svchost.exe    
+0x3e5e7a28         TCPv6    :::3389                        :::0                 LISTENING        1148     svchost.exe    
+0x3e69fd80         TCPv4    0.0.0.0:49152                  0.0.0.0:0            LISTENING        376      wininit.exe    
+0x3e6df878         TCPv4    0.0.0.0:445                    0.0.0.0:0            LISTENING        4        System         
+0x3e6df878         TCPv6    :::445                         :::0                 LISTENING        4        System         
+0x3e7409b0         TCPv4    0.0.0.0:135                    0.0.0.0:0            LISTENING        668      svchost.exe    
+0x3e741410         TCPv4    0.0.0.0:135                    0.0.0.0:0            LISTENING        668      svchost.exe    
+0x3e741410         TCPv6    :::135                         :::0                 LISTENING        668      svchost.exe    
+0x3e759c90         TCPv4    0.0.0.0:49152                  0.0.0.0:0            LISTENING        376      wininit.exe    
+0x3e759c90         TCPv6    :::49152                       :::0                 LISTENING        376      wininit.exe    
+0x3e76c270         TCPv4    0.0.0.0:49153                  0.0.0.0:0            LISTENING        720      svchost.exe    
+0x3e76c270         TCPv6    :::49153                       :::0                 LISTENING        720      svchost.exe    
+0x3e76fb98         TCPv4    0.0.0.0:49153                  0.0.0.0:0            LISTENING        720      svchost.exe    
+0x3f253c80         TCPv4    0.0.0.0:49155                  0.0.0.0:0            LISTENING        476      services.exe   
+
+
