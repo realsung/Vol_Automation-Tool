@@ -57,7 +57,14 @@ def memoryAnalysis():
 		os.system("echo >> Analysis.txt")
 		os.system("echo >> Analysis.txt")
 
+		#filescan
+		os.system("echo 1.filescan >> filescan.txt")
+		os.system("vol.py -f " + file + "filescan" + profile + " >> filescan.txt")
+		os.system("echo >> filescan.txt")
+		os.system("echo >> filescan.txt")
 
+def malAnalysis():
+	
 if __name__ == '__main__':
 	if(len(sys.argv) <= 1): # 인자 값이 1이상
 		print("HELP : python vap.py -h 또는 --help")
