@@ -1,139 +1,1011 @@
 1.imageinfo
-          Suggested Profile(s) : Win7SP1x86_23418, Win7SP0x86, Win7SP1x86
-                     AS Layer1 : IA32PagedMemoryPae (Kernel AS)
-                     AS Layer2 : FileAddressSpace (/Users/realsung/Desktop/major/Vol_Automation-Tool/file1.vmem)
-                      PAE type : PAE
-                           DTB : 0x185000L
-                          KDBG : 0x82b29c30L
-          Number of Processors : 1
+          Suggested Profile(s) : Win7SP1x64, Win7SP0x64, Win2008R2SP0x64, Win2008R2SP1x64_23418, Win2008R2SP1x64, Win7SP1x64_23418
+                     AS Layer1 : WindowsAMD64PagedMemory (Kernel AS)
+                     AS Layer2 : FileAddressSpace (/Users/realsung/Desktop/major/Vol_Automation-Tool/OtterCTF.vmem)
+                      PAE type : No PAE
+                           DTB : 0x187000L
+                          KDBG : 0xf80002c430a0L
+          Number of Processors : 2
      Image Type (Service Pack) : 1
-                KPCR for CPU 0 : 0x82b2ac00L
-             KUSER_SHARED_DATA : 0xffdf0000L
-           Image date and time : 2018-10-29 10:06:40 UTC+0000
-     Image local date and time : 2018-10-29 03:06:40 -0700
+                KPCR for CPU 0 : 0xfffff80002c44d00L
+                KPCR for CPU 1 : 0xfffff880009ef000L
+             KUSER_SHARED_DATA : 0xfffff78000000000L
+           Image date and time : 2018-08-04 19:34:22 UTC+0000
+     Image local date and time : 2018-08-04 22:34:22 +0300
 
 
 2.psxview
-Offset(P)  Name                    PID pslist psscan thrdproc pspcid csrss session deskthrd ExitTime
----------- -------------------- ------ ------ ------ -------- ------ ----- ------- -------- --------
-0x3e4ef030 wlms.exe               1568 True   False  True     True   True  True    True     
-0x3e7c4d40 audiodg.exe             984 True   False  True     True   True  True    True     
-0x3e6b4c88 svchost.exe             668 True   False  True     True   True  True    True     
-0x3e5c4d40 dllhost.exe             696 True   False  True     True   True  True    True     
-0x3e552390 dllhost.exe            1760 True   False  True     True   True  True    True     
-0x26eb1b18 svchost.exe             804 True   False  True     True   True  True    True     
-0x3e558d40 sppsvc.exe             1876 True   False  True     True   True  True    True     
-0x3ef02610 svchost.exe            3876 True   False  True     True   True  True    True     
-0x3e7b5030 svchost.exe             924 True   False  True     True   True  True    True     
-0x3f5b1a60 SearchIndexer.         3664 True   False  True     True   True  True    True     
-0x3e75bd40 svchost.exe             720 True   False  True     True   True  True    True     
-0x3e40f030 spoolsv.exe            1228 True   False  True     True   True  True    True     
-0x3f18cd40 SearchProtocol         3800 True   False  True     True   True  True    True     
-0x3e482030 vmicsvc.exe            1420 True   False  True     True   True  True    True     
-0x3eeb0b18 notepad.exe            3628 True   False  True     True   True  True    True     
-0x3e6aab18 vmtoolsd.exe           3244 True   False  True     True   True  True    True     
-0x3eedeb18 SearchFilterHo         3760 True   False  True     True   True  True    True     
-0x3e6bc030 services.exe            476 True   False  True     True   True  True    False    
-0x3e475d40 vmicsvc.exe            1368 True   False  True     True   True  True    True     
-0x3eeef680 mspaint.exe            3848 True   False  True     True   True  True    True     
-0x3e6bf740 lsass.exe               492 True   False  True     True   True  True    False    
-0x3e6c3340 lsm.exe                 500 True   False  True     True   True  True    True     
-0x3e4924a0 vmicsvc.exe            1448 True   False  True     True   True  True    True     
-0x3e660030 wininit.exe             376 True   False  True     True   True  True    True     
-0x3d817800 taskhost.exe           3040 True   False  True     True   True  True    True     
-0x3e2de6d0 VSSVC.exe              2684 True   False  True     True   True  True    True     
-0x3e2b38f8 winlogon.exe           2880 True   False  True     True   True  True    True     
-0x3e4a0cd8 msdtc.exe              2132 True   False  True     True   True  True    True     
-0x3e20d730 svchost.exe             600 True   False  True     True   True  True    True     
-0x3e4264e0 svchost.exe            1264 True   False  True     True   True  True    True     
-0x3e47fa10 vmicsvc.exe            1396 True   False  True     True   True  True    True     
-0x3e7a8030 svchost.exe             888 True   False  True     True   True  True    True     
-0x3e2029f8 explorer.exe           3140 True   False  True     True   True  True    True     
-0x3e2a5110 dwm.exe                3128 True   False  True     True   True  True    True     
-0x3e7f5d40 svchost.exe            1148 True   False  True     True   True  True    True     
-0x3ee9bd40 vmtoolsd.exe           1520 True   False  True     True   True  True    True     
-0x3e4747f8 vmicsvc.exe            1348 True   False  True     True   True  True    True     
-0x3e2dab20 csrss.exe              2852 True   False  True     True   False True    True     
-0x3ff6e020 System                    4 True   False  True     True   False False   False    
-0x3e990030 csrss.exe               336 True   False  True     True   False True    True     
-0x3e3f87f0 smss.exe                240 True   False  True     True   False False   False    
+Offset(P)          Name                    PID pslist psscan thrdproc pspcid csrss session deskthrd ExitTime
+------------------ -------------------- ------ ------ ------ -------- ------ ----- ------- -------- --------
+0x000000007dde7800 svchost.exe            1948 True   True   True     True   True  True    True     
+0x000000007e4c2700 mscorsvw.exe           3124 True   True   True     True   True  True    True     
+0x000000007d6c9b30 bittorrentie.e         2624 True   True   True     True   True  True    True     
+0x000000007ded37e0 svchost.exe             620 True   True   True     True   True  True    True     
+0x000000007e702b30 chrome.exe              576 True   True   True     True   True  True    True     
+0x000000007df718a0 svchost.exe            1164 True   True   True     True   True  True    True     
+0x000000007e4e4b30 svchost.exe            3196 True   True   True     True   True  True    True     
+0x000000007dc92920 vmtoolsd.exe           1428 True   True   True     True   True  True    True     
+0x000000007fc3c890 svchost.exe             604 True   True   True     True   True  True    True     
+0x000000007dbfd960 notepad.exe            3304 True   True   True     True   True  True    True     
+0x000000007e6c5b30 vmware-tray.ex         3720 True   True   True     True   True  True    True     
+0x000000007de2e9e0 svchost.exe             808 True   True   True     True   True  True    True     
+0x000000007d686b30 Rick And Morty         3820 True   True   True     True   True  True    True     
+0x000000007e435240 chrome.exe             3648 True   True   True     True   True  True    True     
+0x000000007d6a7b30 bittorrentie.e         2308 True   True   True     True   True  True    True     
+0x000000007e6eab30 chrome.exe             4084 True   True   True     True   True  True    True     
+0x000000007de753a0 audiodg.exe             960 True   True   True     True   True  True    True     
+0x000000007de4db30 svchost.exe             868 True   True   True     True   True  True    True     
+0x000000007dbe9b30 taskhost.exe           2344 True   True   True     True   True  True    True     
+0x000000007d9aab30 SearchIndexer.         3064 True   True   True     True   True  True    True     
+0x000000007e1ebb30 svchost.exe             712 True   True   True     True   True  True    True     
+0x000000007fb24b30 WmiPrvSE.exe           1800 True   True   True     True   True  True    True     
+0x000000007de31b30 svchost.exe             844 True   True   True     True   True  True    True     
+0x000000007dc7f630 dllhost.exe            1324 True   True   True     True   True  True    True     
+0x000000007e0d1060 Lavasoft.WCAss         3496 True   True   True     True   True  True    True     
+0x000000007e7ef1f0 chrome.exe             1796 True   True   True     True   True  True    True     
+0x000000007db12060 WmiPrvSE.exe           2136 True   True   True     True   True  True    True     
+0x000000007e000a90 chrome.exe             3924 True   True   True     True   True  True    True     
+0x000000007e0f4060 winlogon.exe            432 True   True   True     True   True  True    True     
+0x000000007e1377c0 services.exe            492 True   True   True     True   True  True    False    
+0x000000007de97060 svchost.exe            1012 True   True   True     True   True  True    True     
+0x000000007d832060 sppsvc.exe             2500 True   True   True     True   True  True    True     
+0x000000007db8f060 WebCompanionIn         3880 True   True   True     True   True  True    True     
+0x000000007d890b30 BitTorrent.exe         2836 True   True   True     True   True  True    True     
+0x000000007e13f060 lsass.exe               500 True   True   True     True   True  True    False    
+0x000000007ddf3b30 msdtc.exe              1436 True   True   True     True   True  True    True     
+0x000000007e4643d0 conhost.exe            2420 True   True   False    True   True  True    False    2018-08-04 19:34:22 UTC+0000
+0x000000007e1461a0 lsm.exe                 508 True   True   True     True   True  True    False    
+0x000000007dc0f630 VGAuthService.         1356 True   True   True     True   True  True    True     
+0x000000007e6f7b30 chrome.exe             1808 True   True   True     True   True  True    True     
+0x000000007e8ed060 wininit.exe             396 True   True   True     True   True  True    True     
+0x000000007d403610 mscorsvw.exe            412 True   True   True     True   True  True    True     
+0x000000007d87e060 explorer.exe           2728 True   True   True     True   True  True    True     
+0x000000007e6e3870 chrome.exe             4076 True   True   True     True   True  True    True     
+0x000000007e4268b0 WebCompanion.e         3856 True   True   True     True   True  True    True     
+0x000000007e5f98f0 chrome.exe             2748 True   True   True     True   True  True    True     
+0x000000007d7cb740 LunarMS.exe             708 True   True   True     True   True  True    True     
+0x000000007e4af9f0 svchost.exe             164 True   True   True     True   True  True    True     
+0x000000007e1bdb30 vmacthlp.exe            668 True   True   True     True   True  True    True     
+0x000000007dbcdb30 vmtoolsd.exe           2804 True   True   True     True   True  True    True     
+0x000000007f28c2d0 PresentationFo          724 True   True   True     True   True  True    True     
+0x000000007dbfab30 dwm.exe                2704 True   True   True     True   True  True    True     
+0x000000007df5ab30 spoolsv.exe            1120 True   True   True     True   True  True    True     
+0x000000007eac8380 csrss.exe               348 True   True   True     True   False True    True     
+0x000000007e072b30 sc.exe                 3504 True   True   False    True   False True    False    2018-08-04 19:33:48 UTC+0000
+0x000000007da8f060 sc.exe                 3208 True   True   False    True   False True    False    2018-08-04 19:33:48 UTC+0000
+0x000000007fe83740 System                    4 True   True   True     True   False False   False    
+0x000000007f2d3b30 csrss.exe               388 True   True   True     True   False True    True     
+0x000000007e772b30 cmd.exe                3916 True   True   False    True   False True    False    2018-08-04 19:34:22 UTC+0000
+0x000000007f67e4d0 smss.exe                260 True   True   True     True   False False   False    
+0x000000007d8f02e0 WebCompanion.e         2844 True   True   False    True   False True    False    2018-08-04 19:33:33 UTC+0000
+0x000000007dcb6890 sc.exe                  452 True   True   False    True   False True    False    2018-08-04 19:33:48 UTC+0000
+0x000000007de01060 sc.exe                 2028 True   True   False    True   False True    False    2018-08-04 19:34:03 UTC+0000
+0x000000007dce7b30 SearchFilterHo         2740 False  True   False    False  False False   False    2018-08-04 19:34:22 UTC+0000
+0x000000007e7fe210 SearchProtocol         3428 False  True   False    False  False False   False    2018-08-04 19:34:22 UTC+0000
+0x000000007e5bfb30 ipconfig.exe           3788 False  True   False    False  False False   False    2018-08-04 19:34:22 UTC+0000
 
 
 3.pstree
 Name                                                  Pid   PPid   Thds   Hnds Time
 -------------------------------------------------- ------ ------ ------ ------ ----
- 0x86790030:csrss.exe                                 336    312      9    465 2018-10-30 03:04:42 UTC+0000
- 0x86860030:wininit.exe                               376    312      3     75 2018-10-30 03:04:42 UTC+0000
-. 0x868c3340:lsm.exe                                  500    376     11    207 2018-10-30 03:04:42 UTC+0000
-. 0x868bc030:services.exe                             476    376     10    223 2018-10-30 03:04:42 UTC+0000
-.. 0x86a82030:vmicsvc.exe                            1420    476      5     80 2018-10-30 03:04:43 UTC+0000
-.. 0x868b4c88:svchost.exe                             668    476      6    265 2018-10-30 03:04:42 UTC+0000
-.. 0x86aef030:wlms.exe                               1568    476      4     45 2018-10-30 03:04:44 UTC+0000
-.. 0x8cc65b18:svchost.exe                             804    476     20    447 2018-10-30 03:04:43 UTC+0000
-... 0x86ca5110:dwm.exe                               3128    804      4     71 2018-10-29 10:05:00 UTC+0000
-.. 0x86a924a0:vmicsvc.exe                            1448    476      5     81 2018-10-30 03:04:43 UTC+0000
-.. 0x869b5030:svchost.exe                             924    476     33    864 2018-10-30 03:04:43 UTC+0000
-.. 0x86102610:svchost.exe                            3876    476      7    104 2018-10-29 10:05:07 UTC+0000
-.. 0x86bc4d40:dllhost.exe                             696    476     18    199 2018-10-29 10:04:44 UTC+0000
-.. 0x85bb1a60:SearchIndexer.                         3664    476     13    635 2018-10-29 10:05:06 UTC+0000
-... 0x85f8cd40:SearchProtocol                        3800   3664      6    265 2018-10-29 10:05:07 UTC+0000
-... 0x860deb18:SearchFilterHo                        3760   3664      3     77 2018-10-29 10:05:07 UTC+0000
-.. 0x87617800:taskhost.exe                           3040    476     10    195 2018-10-29 10:05:00 UTC+0000
-.. 0x86a747f8:vmicsvc.exe                            1348    476      8    106 2018-10-30 03:04:43 UTC+0000
-.. 0x86a0f030:spoolsv.exe                            1228    476     13    317 2018-10-30 03:04:43 UTC+0000
-.. 0x86b58d40:sppsvc.exe                             1876    476      5    147 2018-10-29 10:04:44 UTC+0000
-.. 0x8609bd40:vmtoolsd.exe                           1520    476     11    270 2018-10-30 03:04:44 UTC+0000
-.. 0x86a75d40:vmicsvc.exe                            1368    476      9    129 2018-10-30 03:04:43 UTC+0000
-.. 0x86b52390:dllhost.exe                            1760    476     21    194 2018-10-29 10:04:44 UTC+0000
-.. 0x8695bd40:svchost.exe                             720    476     18    356 2018-10-30 03:04:42 UTC+0000
-... 0x869c4d40:audiodg.exe                            984    720      6    120 2018-10-30 03:04:43 UTC+0000
-.. 0x86c0d730:svchost.exe                             600    476     11    371 2018-10-30 03:04:42 UTC+0000
-.. 0x86cde6d0:VSSVC.exe                              2684    476      7    118 2018-10-29 10:04:50 UTC+0000
-.. 0x86a264e0:svchost.exe                            1264    476     20    307 2018-10-30 03:04:43 UTC+0000
-.. 0x86a7fa10:vmicsvc.exe                            1396    476      4     66 2018-10-30 03:04:43 UTC+0000
-.. 0x869a8030:svchost.exe                             888    476     15    506 2018-10-30 03:04:43 UTC+0000
-.. 0x86aa0cd8:msdtc.exe                              2132    476     15    153 2018-10-29 10:04:47 UTC+0000
-.. 0x869f5d40:svchost.exe                            1148    476     21    510 2018-10-30 03:04:43 UTC+0000
-. 0x868bf740:lsass.exe                                492    376      7    470 2018-10-30 03:04:42 UTC+0000
- 0x851ae020:System                                      4      0     79    389 2018-10-30 03:04:38 UTC+0000
-. 0x86df87f0:smss.exe                                 240      4      2     29 2018-10-30 03:04:38 UTC+0000
- 0x86c029f8:explorer.exe                             3140   3120     26    670 2018-10-29 10:05:00 UTC+0000
-. 0x860ef680:mspaint.exe                             3848   3140      8    317 2018-10-29 10:05:07 UTC+0000
-. 0x860b0b18:notepad.exe                             3628   3140     14    307 2018-10-29 10:05:04 UTC+0000
-. 0x868aab18:vmtoolsd.exe                            3244   3140      7    215 2018-10-29 10:05:00 UTC+0000
- 0x86cb38f8:winlogon.exe                             2880   2844      4    113 2018-10-29 10:04:56 UTC+0000
- 0x86cdab20:csrss.exe                                2852   2844      9    217 2018-10-29 10:04:56 UTC+0000
+ 0xfffffa801b27e060:explorer.exe                     2728   2696     33    854 2018-08-04 19:27:04 UTC+0000
+. 0xfffffa801b486b30:Rick And Morty                  3820   2728      4    185 2018-08-04 19:32:55 UTC+0000
+.. 0xfffffa801a4c5b30:vmware-tray.ex                 3720   3820      8    147 2018-08-04 19:33:02 UTC+0000
+. 0xfffffa801b2f02e0:WebCompanion.e                  2844   2728      0 ------ 2018-08-04 19:27:07 UTC+0000
+. 0xfffffa801a4e3870:chrome.exe                      4076   2728     44   1160 2018-08-04 19:29:30 UTC+0000
+.. 0xfffffa801a4eab30:chrome.exe                     4084   4076      8     86 2018-08-04 19:29:30 UTC+0000
+.. 0xfffffa801a5ef1f0:chrome.exe                     1796   4076     15    170 2018-08-04 19:33:41 UTC+0000
+.. 0xfffffa801aa00a90:chrome.exe                     3924   4076     16    228 2018-08-04 19:29:51 UTC+0000
+.. 0xfffffa801a635240:chrome.exe                     3648   4076     16    207 2018-08-04 19:33:38 UTC+0000
+.. 0xfffffa801a502b30:chrome.exe                      576   4076      2     58 2018-08-04 19:29:31 UTC+0000
+.. 0xfffffa801a4f7b30:chrome.exe                     1808   4076     13    229 2018-08-04 19:29:32 UTC+0000
+.. 0xfffffa801a7f98f0:chrome.exe                     2748   4076     15    181 2018-08-04 19:31:15 UTC+0000
+. 0xfffffa801b5cb740:LunarMS.exe                      708   2728     18    346 2018-08-04 19:27:39 UTC+0000
+. 0xfffffa801b1cdb30:vmtoolsd.exe                    2804   2728      6    190 2018-08-04 19:27:06 UTC+0000
+. 0xfffffa801b290b30:BitTorrent.exe                  2836   2728     24    471 2018-08-04 19:27:07 UTC+0000
+.. 0xfffffa801b4c9b30:bittorrentie.e                 2624   2836     13    316 2018-08-04 19:27:21 UTC+0000
+.. 0xfffffa801b4a7b30:bittorrentie.e                 2308   2836     15    337 2018-08-04 19:27:19 UTC+0000
+ 0xfffffa8018d44740:System                              4      0     95    411 2018-08-04 19:26:03 UTC+0000
+. 0xfffffa801947e4d0:smss.exe                         260      4      2     30 2018-08-04 19:26:03 UTC+0000
+ 0xfffffa801a2ed060:wininit.exe                       396    336      3     78 2018-08-04 19:26:11 UTC+0000
+. 0xfffffa801ab377c0:services.exe                     492    396     11    242 2018-08-04 19:26:12 UTC+0000
+.. 0xfffffa801afe7800:svchost.exe                    1948    492      6     96 2018-08-04 19:26:42 UTC+0000
+.. 0xfffffa801ae92920:vmtoolsd.exe                   1428    492      9    313 2018-08-04 19:26:27 UTC+0000
+... 0xfffffa801a572b30:cmd.exe                       3916   1428      0 ------ 2018-08-04 19:34:22 UTC+0000
+.. 0xfffffa801ae0f630:VGAuthService.                 1356    492      3     85 2018-08-04 19:26:25 UTC+0000
+.. 0xfffffa801abbdb30:vmacthlp.exe                    668    492      3     56 2018-08-04 19:26:16 UTC+0000
+.. 0xfffffa801aad1060:Lavasoft.WCAss                 3496    492     14    473 2018-08-04 19:33:49 UTC+0000
+.. 0xfffffa801a6af9f0:svchost.exe                     164    492     12    147 2018-08-04 19:28:42 UTC+0000
+.. 0xfffffa801ac2e9e0:svchost.exe                     808    492     22    508 2018-08-04 19:26:18 UTC+0000
+... 0xfffffa801ac753a0:audiodg.exe                    960    808      7    151 2018-08-04 19:26:19 UTC+0000
+.. 0xfffffa801ae7f630:dllhost.exe                    1324    492     15    207 2018-08-04 19:26:42 UTC+0000
+.. 0xfffffa801a6c2700:mscorsvw.exe                   3124    492      7     77 2018-08-04 19:28:43 UTC+0000
+.. 0xfffffa801b232060:sppsvc.exe                     2500    492      4    149 2018-08-04 19:26:58 UTC+0000
+.. 0xfffffa801abebb30:svchost.exe                     712    492      8    301 2018-08-04 19:26:17 UTC+0000
+.. 0xfffffa801ad718a0:svchost.exe                    1164    492     18    312 2018-08-04 19:26:23 UTC+0000
+.. 0xfffffa801ac31b30:svchost.exe                     844    492     17    396 2018-08-04 19:26:18 UTC+0000
+... 0xfffffa801b1fab30:dwm.exe                       2704    844      4     97 2018-08-04 19:27:04 UTC+0000
+.. 0xfffffa801988c2d0:PresentationFo                  724    492      6    148 2018-08-04 19:27:52 UTC+0000
+.. 0xfffffa801b603610:mscorsvw.exe                    412    492      7     86 2018-08-04 19:28:42 UTC+0000
+.. 0xfffffa8018e3c890:svchost.exe                     604    492     11    376 2018-08-04 19:26:16 UTC+0000
+... 0xfffffa8019124b30:WmiPrvSE.exe                  1800    604      9    222 2018-08-04 19:26:39 UTC+0000
+... 0xfffffa801b112060:WmiPrvSE.exe                  2136    604     12    324 2018-08-04 19:26:51 UTC+0000
+.. 0xfffffa801ad5ab30:spoolsv.exe                    1120    492     14    346 2018-08-04 19:26:22 UTC+0000
+.. 0xfffffa801ac4db30:svchost.exe                     868    492     45   1114 2018-08-04 19:26:18 UTC+0000
+.. 0xfffffa801a6e4b30:svchost.exe                    3196    492     14    352 2018-08-04 19:28:44 UTC+0000
+.. 0xfffffa801acd37e0:svchost.exe                     620    492     19    415 2018-08-04 19:26:21 UTC+0000
+.. 0xfffffa801b1e9b30:taskhost.exe                   2344    492      8    193 2018-08-04 19:26:57 UTC+0000
+.. 0xfffffa801ac97060:svchost.exe                    1012    492     12    554 2018-08-04 19:26:20 UTC+0000
+.. 0xfffffa801b3aab30:SearchIndexer.                 3064    492     11    610 2018-08-04 19:27:14 UTC+0000
+.. 0xfffffa801aff3b30:msdtc.exe                      1436    492     14    155 2018-08-04 19:26:43 UTC+0000
+. 0xfffffa801ab3f060:lsass.exe                        500    396      7    610 2018-08-04 19:26:12 UTC+0000
+. 0xfffffa801ab461a0:lsm.exe                          508    396     10    148 2018-08-04 19:26:12 UTC+0000
+ 0xfffffa801a0c8380:csrss.exe                         348    336      9    563 2018-08-04 19:26:10 UTC+0000
+. 0xfffffa801a6643d0:conhost.exe                     2420    348      0     30 2018-08-04 19:34:22 UTC+0000
+ 0xfffffa80198d3b30:csrss.exe                         388    380     11    460 2018-08-04 19:26:11 UTC+0000
+ 0xfffffa801aaf4060:winlogon.exe                      432    380      3    113 2018-08-04 19:26:11 UTC+0000
+ 0xfffffa801b18f060:WebCompanionIn                   3880   1484     15    522 2018-08-04 19:33:07 UTC+0000
+. 0xfffffa801aa72b30:sc.exe                          3504   3880      0 ------ 2018-08-04 19:33:48 UTC+0000
+. 0xfffffa801aeb6890:sc.exe                           452   3880      0 ------ 2018-08-04 19:33:48 UTC+0000
+. 0xfffffa801a6268b0:WebCompanion.e                  3856   3880     15    386 2018-08-04 19:34:05 UTC+0000
+. 0xfffffa801b08f060:sc.exe                          3208   3880      0 ------ 2018-08-04 19:33:47 UTC+0000
+. 0xfffffa801ac01060:sc.exe                          2028   3880      0 ------ 2018-08-04 19:33:49 UTC+0000
+ 0xfffffa801b1fd960:notepad.exe                      3304   3132      2     79 2018-08-04 19:34:10 UTC+0000
 
 
 4.netscan
 Offset(P)          Proto    Local Address                  Foreign Address      State            Pid      Owner          Created
-0x3e4b1a10         UDPv4    0.0.0.0:0                      *:*                                   492      lsass.exe      2018-10-30 03:04:44 UTC+0000
-0x3e4b1a10         UDPv6    :::0                           *:*                                   492      lsass.exe      2018-10-30 03:04:44 UTC+0000
-0x3e5228d8         UDPv4    0.0.0.0:0                      *:*                                   492      lsass.exe      2018-10-30 03:04:44 UTC+0000
-0x3e6f26d0         UDPv4    0.0.0.0:0                      *:*                                   1148     svchost.exe    2018-10-30 03:04:43 UTC+0000
-0x3e6f26d0         UDPv6    :::0                           *:*                                   1148     svchost.exe    2018-10-30 03:04:43 UTC+0000
-0x3e204f60         TCPv4    0.0.0.0:49156                  0.0.0.0:0            LISTENING        492      lsass.exe      
-0x3e204f60         TCPv6    :::49156                       :::0                 LISTENING        492      lsass.exe      
-0x3e4012a0         TCPv4    0.0.0.0:49154                  0.0.0.0:0            LISTENING        924      svchost.exe    
-0x3e405350         TCPv4    0.0.0.0:49154                  0.0.0.0:0            LISTENING        924      svchost.exe    
-0x3e405350         TCPv6    :::49154                       :::0                 LISTENING        924      svchost.exe    
-0x3e54ad98         TCPv4    0.0.0.0:49155                  0.0.0.0:0            LISTENING        476      services.exe   
-0x3e54ad98         TCPv6    :::49155                       :::0                 LISTENING        476      services.exe   
-0x3e5747d0         TCPv4    0.0.0.0:3389                   0.0.0.0:0            LISTENING        1148     svchost.exe    
-0x3e5cec90         TCPv4    0.0.0.0:49156                  0.0.0.0:0            LISTENING        492      lsass.exe      
-0x3e5e7a28         TCPv4    0.0.0.0:3389                   0.0.0.0:0            LISTENING        1148     svchost.exe    
-0x3e5e7a28         TCPv6    :::3389                        :::0                 LISTENING        1148     svchost.exe    
-0x3e69fd80         TCPv4    0.0.0.0:49152                  0.0.0.0:0            LISTENING        376      wininit.exe    
-0x3e6df878         TCPv4    0.0.0.0:445                    0.0.0.0:0            LISTENING        4        System         
-0x3e6df878         TCPv6    :::445                         :::0                 LISTENING        4        System         
-0x3e7409b0         TCPv4    0.0.0.0:135                    0.0.0.0:0            LISTENING        668      svchost.exe    
-0x3e741410         TCPv4    0.0.0.0:135                    0.0.0.0:0            LISTENING        668      svchost.exe    
-0x3e741410         TCPv6    :::135                         :::0                 LISTENING        668      svchost.exe    
-0x3e759c90         TCPv4    0.0.0.0:49152                  0.0.0.0:0            LISTENING        376      wininit.exe    
-0x3e759c90         TCPv6    :::49152                       :::0                 LISTENING        376      wininit.exe    
-0x3e76c270         TCPv4    0.0.0.0:49153                  0.0.0.0:0            LISTENING        720      svchost.exe    
-0x3e76c270         TCPv6    :::49153                       :::0                 LISTENING        720      svchost.exe    
-0x3e76fb98         TCPv4    0.0.0.0:49153                  0.0.0.0:0            LISTENING        720      svchost.exe    
-0x3f253c80         TCPv4    0.0.0.0:49155                  0.0.0.0:0            LISTENING        476      services.exe   
+0x7d60f010         UDPv4    0.0.0.0:1900                   *:*                                   2836     BitTorrent.exe 2018-08-04 19:27:17 UTC+0000
+0x7d62b3f0         UDPv4    192.168.202.131:6771           *:*                                   2836     BitTorrent.exe 2018-08-04 19:27:22 UTC+0000
+0x7d62f4c0         UDPv4    127.0.0.1:62307                *:*                                   2836     BitTorrent.exe 2018-08-04 19:27:17 UTC+0000
+0x7d62f920         UDPv4    192.168.202.131:62306          *:*                                   2836     BitTorrent.exe 2018-08-04 19:27:17 UTC+0000
+0x7d6424c0         UDPv4    0.0.0.0:50762                  *:*                                   4076     chrome.exe     2018-08-04 19:33:37 UTC+0000
+0x7d6b4250         UDPv6    ::1:1900                       *:*                                   164      svchost.exe    2018-08-04 19:28:42 UTC+0000
+0x7d6e3230         UDPv4    127.0.0.1:6771                 *:*                                   2836     BitTorrent.exe 2018-08-04 19:27:22 UTC+0000
+0x7d6ed650         UDPv4    0.0.0.0:5355                   *:*                                   620      svchost.exe    2018-08-04 19:34:22 UTC+0000
+0x7d71c8a0         UDPv4    0.0.0.0:0                      *:*                                   868      svchost.exe    2018-08-04 19:34:22 UTC+0000
+0x7d71c8a0         UDPv6    :::0                           *:*                                   868      svchost.exe    2018-08-04 19:34:22 UTC+0000
+0x7d74a390         UDPv4    127.0.0.1:52847                *:*                                   2624     bittorrentie.e 2018-08-04 19:27:24 UTC+0000
+0x7d7602c0         UDPv4    127.0.0.1:52846                *:*                                   2308     bittorrentie.e 2018-08-04 19:27:24 UTC+0000
+0x7d787010         UDPv4    0.0.0.0:65452                  *:*                                   4076     chrome.exe     2018-08-04 19:33:42 UTC+0000
+0x7d789b50         UDPv4    0.0.0.0:50523                  *:*                                   620      svchost.exe    2018-08-04 19:34:22 UTC+0000
+0x7d789b50         UDPv6    :::50523                       *:*                                   620      svchost.exe    2018-08-04 19:34:22 UTC+0000
+0x7d92a230         UDPv4    0.0.0.0:0                      *:*                                   868      svchost.exe    2018-08-04 19:34:22 UTC+0000
+0x7d92a230         UDPv6    :::0                           *:*                                   868      svchost.exe    2018-08-04 19:34:22 UTC+0000
+0x7d9e8b50         UDPv4    0.0.0.0:20830                  *:*                                   2836     BitTorrent.exe 2018-08-04 19:27:15 UTC+0000
+0x7d9f4560         UDPv4    0.0.0.0:0                      *:*                                   3856     WebCompanion.e 2018-08-04 19:34:22 UTC+0000
+0x7d9f8cb0         UDPv4    0.0.0.0:20830                  *:*                                   2836     BitTorrent.exe 2018-08-04 19:27:15 UTC+0000
+0x7d9f8cb0         UDPv6    :::20830                       *:*                                   2836     BitTorrent.exe 2018-08-04 19:27:15 UTC+0000
+0x7d8bb390         TCPv4    0.0.0.0:9008                   0.0.0.0:0            LISTENING        4        System         
+0x7d8bb390         TCPv6    :::9008                        :::0                 LISTENING        4        System         
+0x7d9a9240         TCPv4    0.0.0.0:8733                   0.0.0.0:0            LISTENING        4        System         
+0x7d9a9240         TCPv6    :::8733                        :::0                 LISTENING        4        System         
+0x7d9e19e0         TCPv4    0.0.0.0:20830                  0.0.0.0:0            LISTENING        2836     BitTorrent.exe 
+0x7d9e19e0         TCPv6    :::20830                       :::0                 LISTENING        2836     BitTorrent.exe 
+0x7d9e1c90         TCPv4    0.0.0.0:20830                  0.0.0.0:0            LISTENING        2836     BitTorrent.exe 
+0x7d42ba90         TCPv4    -:0                            56.219.196.26:0      CLOSED           2836     BitTorrent.exe 
+0x7d6124d0         TCPv4    192.168.202.131:49530          77.102.199.102:7575  CLOSED           708      LunarMS.exe    
+0x7d62d690         TCPv4    192.168.202.131:49229          169.1.143.215:8999   CLOSED           2836     BitTorrent.exe 
+0x7d634350         TCPv6    -:0                            38db:c41a:80fa:ffff:38db:c41a:80fa:ffff:0 CLOSED           2836     BitTorrent.exe 
+0x7d6f27f0         TCPv4    192.168.202.131:50381          71.198.155.180:34674 CLOSED           2836     BitTorrent.exe 
+0x7d704010         TCPv4    192.168.202.131:50382          92.251.23.204:6881   CLOSED           2836     BitTorrent.exe 
+0x7d708cf0         TCPv4    192.168.202.131:50364          91.140.89.116:31847  CLOSED           2836     BitTorrent.exe 
+0x7d729620         TCPv4    -:50034                        142.129.37.27:24578  CLOSED           2836     BitTorrent.exe 
+0x7d72cbe0         TCPv4    192.168.202.131:50340          23.37.43.27:80       CLOSED           3496     Lavasoft.WCAss 
+0x7d7365a0         TCPv4    192.168.202.131:50358          23.37.43.27:80       CLOSED           3856     WebCompanion.e 
+0x7d81c890         TCPv4    192.168.202.131:50335          185.154.111.20:60405 CLOSED           2836     BitTorrent.exe 
+0x7d8fd530         TCPv4    192.168.202.131:50327          23.37.43.27:80       CLOSED           3496     Lavasoft.WCAss 
+0x7d9cecf0         TCPv4    192.168.202.131:50373          173.239.232.46:2997  CLOSED           2836     BitTorrent.exe 
+0x7d9d7cf0         TCPv4    192.168.202.131:50371          191.253.122.149:59163 CLOSED           2836     BitTorrent.exe 
+0x7daefec0         UDPv4    0.0.0.0:0                      *:*                                   3856     WebCompanion.e 2018-08-04 19:34:22 UTC+0000
+0x7daefec0         UDPv6    :::0                           *:*                                   3856     WebCompanion.e 2018-08-04 19:34:22 UTC+0000
+0x7db83b90         UDPv4    0.0.0.0:0                      *:*                                   3880     WebCompanionIn 2018-08-04 19:33:30 UTC+0000
+0x7db83b90         UDPv6    :::0                           *:*                                   3880     WebCompanionIn 2018-08-04 19:33:30 UTC+0000
+0x7db9cdd0         UDPv4    0.0.0.0:0                      *:*                                   2844     WebCompanion.e 2018-08-04 19:30:05 UTC+0000
+0x7db9cdd0         UDPv6    :::0                           *:*                                   2844     WebCompanion.e 2018-08-04 19:30:05 UTC+0000
+0x7dc2dc30         UDPv4    0.0.0.0:50879                  *:*                                   4076     chrome.exe     2018-08-04 19:30:41 UTC+0000
+0x7dc2dc30         UDPv6    :::50879                       *:*                                   4076     chrome.exe     2018-08-04 19:30:41 UTC+0000
+0x7dc83810         UDPv4    0.0.0.0:5355                   *:*                                   620      svchost.exe    2018-08-04 19:34:22 UTC+0000
+0x7dc83810         UDPv6    :::5355                        *:*                                   620      svchost.exe    2018-08-04 19:34:22 UTC+0000
+0x7dd82c30         UDPv4    0.0.0.0:5355                   *:*                                   620      svchost.exe    2018-08-04 19:26:38 UTC+0000
+0x7df00980         UDPv4    0.0.0.0:0                      *:*                                   620      svchost.exe    2018-08-04 19:34:22 UTC+0000
+0x7df00980         UDPv6    :::0                           *:*                                   620      svchost.exe    2018-08-04 19:34:22 UTC+0000
+0x7df04cc0         UDPv4    0.0.0.0:5355                   *:*                                   620      svchost.exe    2018-08-04 19:26:38 UTC+0000
+0x7df04cc0         UDPv6    :::5355                        *:*                                   620      svchost.exe    2018-08-04 19:26:38 UTC+0000
+0x7df5f010         UDPv4    0.0.0.0:55175                  *:*                                   620      svchost.exe    2018-08-04 19:34:22 UTC+0000
+0x7dfab010         UDPv4    0.0.0.0:58383                  *:*                                   620      svchost.exe    2018-08-04 19:34:22 UTC+0000
+0x7dfab010         UDPv6    :::58383                       *:*                                   620      svchost.exe    2018-08-04 19:34:22 UTC+0000
+0x7e12c1c0         UDPv4    0.0.0.0:0                      *:*                                   3880     WebCompanionIn 2018-08-04 19:33:27 UTC+0000
+0x7e163a40         UDPv4    0.0.0.0:0                      *:*                                   3880     WebCompanionIn 2018-08-04 19:33:27 UTC+0000
+0x7e163a40         UDPv6    :::0                           *:*                                   3880     WebCompanionIn 2018-08-04 19:33:27 UTC+0000
+0x7e1cf010         UDPv4    192.168.202.131:137            *:*                                   4        System         2018-08-04 19:26:35 UTC+0000
+0x7e1da010         UDPv4    192.168.202.131:138            *:*                                   4        System         2018-08-04 19:26:35 UTC+0000
+0x7dc4ad30         TCPv4    0.0.0.0:49155                  0.0.0.0:0            LISTENING        500      lsass.exe      
+0x7dc4ad30         TCPv6    :::49155                       :::0                 LISTENING        500      lsass.exe      
+0x7dc4b370         TCPv4    0.0.0.0:49155                  0.0.0.0:0            LISTENING        500      lsass.exe      
+0x7dd71010         TCPv4    0.0.0.0:445                    0.0.0.0:0            LISTENING        4        System         
+0x7dd71010         TCPv6    :::445                         :::0                 LISTENING        4        System         
+0x7ddca6b0         TCPv4    0.0.0.0:49156                  0.0.0.0:0            LISTENING        492      services.exe   
+0x7ddcbc00         TCPv4    0.0.0.0:49156                  0.0.0.0:0            LISTENING        492      services.exe   
+0x7ddcbc00         TCPv6    :::49156                       :::0                 LISTENING        492      services.exe   
+0x7de09c30         TCPv4    0.0.0.0:49152                  0.0.0.0:0            LISTENING        396      wininit.exe    
+0x7de09c30         TCPv6    :::49152                       :::0                 LISTENING        396      wininit.exe    
+0x7de0d7b0         TCPv4    0.0.0.0:49152                  0.0.0.0:0            LISTENING        396      wininit.exe    
+0x7de424e0         TCPv4    0.0.0.0:49153                  0.0.0.0:0            LISTENING        808      svchost.exe    
+0x7de45ef0         TCPv4    0.0.0.0:49153                  0.0.0.0:0            LISTENING        808      svchost.exe    
+0x7de45ef0         TCPv6    :::49153                       :::0                 LISTENING        808      svchost.exe    
+0x7df3d270         TCPv4    0.0.0.0:49154                  0.0.0.0:0            LISTENING        868      svchost.exe    
+0x7df3eef0         TCPv4    0.0.0.0:49154                  0.0.0.0:0            LISTENING        868      svchost.exe    
+0x7df3eef0         TCPv6    :::49154                       :::0                 LISTENING        868      svchost.exe    
+0x7e1f6010         TCPv4    0.0.0.0:135                    0.0.0.0:0            LISTENING        712      svchost.exe    
+0x7e1f6010         TCPv6    :::135                         :::0                 LISTENING        712      svchost.exe    
+0x7e1f8ef0         TCPv4    0.0.0.0:135                    0.0.0.0:0            LISTENING        712      svchost.exe    
+0x7db000a0         TCPv4    -:50091                        93.142.197.107:32645 CLOSED           2836     BitTorrent.exe 
+0x7db132e0         TCPv4    192.168.202.131:50280          72.55.154.81:80      CLOSED           3880     WebCompanionIn 
+0x7dbc3010         TCPv6    -:0                            4847:d418:80fa:ffff:4847:d418:80fa:ffff:0 CLOSED           4076     chrome.exe     
+0x7dc4bcf0         TCPv4    -:0                            104.240.179.26:0     CLOSED           3        ?4????       
+0x7dc83080         TCPv4    192.168.202.131:50377          179.108.238.10:19761 CLOSED           2836     BitTorrent.exe 
+0x7dd451f0         TCPv4    192.168.202.131:50321          45.27.208.145:51414  CLOSED           2836     BitTorrent.exe 
+0x7ddae890         TCPv4    -:50299                        212.92.105.227:8999  CLOSED           2836     BitTorrent.exe 
+0x7ddff010         TCPv4    192.168.202.131:50379          23.37.43.27:80       CLOSED           3856     WebCompanion.e 
+0x7e0057d0         TCPv4    192.168.202.131:50353          85.242.139.158:51413 CLOSED           2836     BitTorrent.exe 
+0x7e0114b0         TCPv4    192.168.202.131:50339          77.65.111.216:8306   CLOSED           2836     BitTorrent.exe 
+0x7e042cf0         TCPv4    192.168.202.131:50372          83.44.27.35:52103    CLOSED           2836     BitTorrent.exe 
+0x7e08a010         TCPv4    192.168.202.131:50374          89.46.49.163:20133   CLOSED           2836     BitTorrent.exe 
+0x7e092010         TCPv4    192.168.202.131:50378          120.29.114.41:13155  CLOSED           2836     BitTorrent.exe 
+0x7e094b90         TCPv4    192.168.202.131:50365          52.91.1.182:55125    CLOSED           2836     BitTorrent.exe 
+0x7e09ba90         TCPv6    -:0                            68f0:181b:80fa:ffff:68f0:181b:80fa:ffff:0 CLOSED           2836     BitTorrent.exe 
+0x7e0a8b90         TCPv4    192.168.202.131:50341          72.55.154.81:80      CLOSED           3880     WebCompanionIn 
+0x7e0d6180         TCPv4    192.168.202.131:50349          196.250.217.22:32815 CLOSED           2836     BitTorrent.exe 
+0x7e108100         TCPv4    192.168.202.131:50360          174.0.234.77:31240   CLOSED           2836     BitTorrent.exe 
+0x7e124910         TCPv4    192.168.202.131:50366          89.78.106.196:51413  CLOSED           2836     BitTorrent.exe 
+0x7e14dcf0         TCPv4    192.168.202.131:50363          122.62.218.159:11627 CLOSED           2836     BitTorrent.exe 
+0x7e18bcf0         TCPv4    192.168.202.131:50333          191.177.124.34:21011 CLOSED           2836     BitTorrent.exe 
+0x7e1f7ab0         TCPv4    -:0                            56.187.190.26:0      CLOSED           3        ?4????       
+0x7e48d9c0         UDPv6    fe80::b06b:a531:ec88:457f:1900 *:*                                   164      svchost.exe    2018-08-04 19:28:42 UTC+0000
+0x7e4ad870         UDPv4    127.0.0.1:1900                 *:*                                   164      svchost.exe    2018-08-04 19:28:42 UTC+0000
+0x7e511bb0         UDPv4    0.0.0.0:60005                  *:*                                   620      svchost.exe    2018-08-04 19:34:22 UTC+0000
+0x7e5dc3b0         UDPv6    fe80::b06b:a531:ec88:457f:546  *:*                                   808      svchost.exe    2018-08-04 19:33:28 UTC+0000
+0x7e7469c0         UDPv4    0.0.0.0:50878                  *:*                                   4076     chrome.exe     2018-08-04 19:30:39 UTC+0000
+0x7e7469c0         UDPv6    :::50878                       *:*                                   4076     chrome.exe     2018-08-04 19:30:39 UTC+0000
+0x7e77cb00         UDPv4    0.0.0.0:50748                  *:*                                   4076     chrome.exe     2018-08-04 19:30:07 UTC+0000
+0x7e77cb00         UDPv6    :::50748                       *:*                                   4076     chrome.exe     2018-08-04 19:30:07 UTC+0000
+0x7e79f3f0         UDPv4    0.0.0.0:5353                   *:*                                   4076     chrome.exe     2018-08-04 19:29:35 UTC+0000
+0x7e7a0ec0         UDPv4    0.0.0.0:5353                   *:*                                   4076     chrome.exe     2018-08-04 19:29:35 UTC+0000
+0x7e7a0ec0         UDPv6    :::5353                        *:*                                   4076     chrome.exe     2018-08-04 19:29:35 UTC+0000
+0x7e7a3960         UDPv4    0.0.0.0:0                      *:*                                   3880     WebCompanionIn 2018-08-04 19:33:30 UTC+0000
+0x7e7dd010         UDPv6    ::1:58340                      *:*                                   164      svchost.exe    2018-08-04 19:28:42 UTC+0000
+0x7e413a40         TCPv4    -:0                            -:0                  CLOSED           708      LunarMS.exe    
+0x7e415010         TCPv4    192.168.202.131:50346          89.64.10.176:10589   CLOSED           2836     BitTorrent.exe 
+0x7e4202d0         TCPv4    192.168.202.131:50217          104.18.21.226:80     CLOSED           3880     WebCompanionIn 
+0x7e45f110         TCPv4    192.168.202.131:50211          104.18.20.226:80     CLOSED           3880     WebCompanionIn 
+0x7e4cc910         TCPv4    192.168.202.131:50228          104.18.20.226:80     CLOSED           3880     WebCompanionIn 
+0x7e512950         TCPv4    192.168.202.131:50345          77.126.30.221:13905  CLOSED           2836     BitTorrent.exe 
+0x7e521b50         TCPv4    -:0                            -:0                  CLOSED           708      LunarMS.exe    
+0x7e5228d0         TCPv4    192.168.202.131:50075          70.65.116.120:52700  CLOSED           2836     BitTorrent.exe 
+0x7e52f010         TCPv4    192.168.202.131:50343          86.121.4.189:46392   CLOSED           2836     BitTorrent.exe 
+0x7e563860         TCPv4    192.168.202.131:50170          103.232.25.44:25384  CLOSED           2836     BitTorrent.exe 
+0x7e572cf0         TCPv4    192.168.202.131:50125          122.62.218.159:11627 CLOSED           2836     BitTorrent.exe 
+0x7e5d6cf0         TCPv4    192.168.202.131:50324          54.197.8.177:49420   CLOSED           2836     BitTorrent.exe 
+0x7e71b010         TCPv4    192.168.202.131:50344          70.27.98.75:6881     CLOSED           2836     BitTorrent.exe 
+0x7e71d010         TCPv4    192.168.202.131:50351          99.251.199.160:1045  CLOSED           2836     BitTorrent.exe 
+0x7e74b010         TCPv4    192.168.202.131:50385          209.236.6.89:56500   CLOSED           2836     BitTorrent.exe 
+0x7e78b7f0         TCPv4    192.168.202.131:50238          72.55.154.82:80      CLOSED           3880     WebCompanionIn 
+0x7e7ae380         TCPv4    192.168.202.131:50361          5.34.21.181:8999     CLOSED           2836     BitTorrent.exe 
+0x7e7b0380         TCPv6    -:0                            4847:d418:80fa:ffff:4847:d418:80fa:ffff:0 CLOSED           2836     BitTorrent.exe 
+0x7e7b9010         TCPv4    192.168.202.131:50334          188.129.94.129:25128 CLOSED           2836     BitTorrent.exe 
+0x7e94b010         TCPv4    192.168.202.131:50356          77.126.30.221:13905  CLOSED           2836     BitTorrent.exe 
+0x7e9ad840         TCPv4    192.168.202.131:50380          84.52.144.29:56299   CLOSED           2836     BitTorrent.exe 
+0x7e9bacf0         TCPv4    192.168.202.131:50350          77.253.242.0:5000    CLOSED           2836     BitTorrent.exe 
+0x7eaac5e0         TCPv4    192.168.202.131:50387          93.184.220.29:80     CLOSED           3856     WebCompanion.e 
+0x7eab4cf0         TCPv4    -:0                            56.219.196.26:0      CLOSED           2836     BitTorrent.exe 
+0x7fb9cec0         UDPv4    192.168.202.131:1900           *:*                                   164      svchost.exe    2018-08-04 19:28:42 UTC+0000
+0x7fb9d430         UDPv4    127.0.0.1:58341                *:*                                   164      svchost.exe    2018-08-04 19:28:42 UTC+0000
+
+
+6.hivescan
+Virtual            Physical           Name
+------------------ ------------------ ----
+0xfffff8a00377d2d0 0x00000000624162d0 \??\C:\System Volume Information\Syscache.hve
+0xfffff8a00000f010 0x000000002d4c1010 [no name]
+0xfffff8a000024010 0x000000002d50c010 \REGISTRY\MACHINE\SYSTEM
+0xfffff8a000053320 0x000000002d5bb320 \REGISTRY\MACHINE\HARDWARE
+0xfffff8a000109410 0x0000000029cb4410 \SystemRoot\System32\Config\SECURITY
+0xfffff8a00033d410 0x000000002a958410 \Device\HarddiskVolume1\Boot\BCD
+0xfffff8a0005d5010 0x000000002a983010 \SystemRoot\System32\Config\SOFTWARE
+0xfffff8a001495010 0x0000000024912010 \SystemRoot\System32\Config\DEFAULT
+0xfffff8a0016d4010 0x00000000214e1010 \SystemRoot\System32\Config\SAM
+0xfffff8a00175b010 0x00000000211eb010 \??\C:\Windows\ServiceProfiles\NetworkService\NTUSER.DAT
+0xfffff8a00176e410 0x00000000206db410 \??\C:\Windows\ServiceProfiles\LocalService\NTUSER.DAT
+0xfffff8a002090010 0x000000000b92b010 \??\C:\Users\Rick\ntuser.dat
+0xfffff8a0020ad410 0x000000000db41410 \??\C:\Users\Rick\AppData\Local\Microsoft\Windows\UsrClass.dat
+
+
+7.Significant Registry
+Legend: (S) = Stable   (V) = Volatile
+
+----------------------------
+Registry: \REGISTRY\MACHINE\SYSTEM
+Key name: ActiveComputerName (V)
+Last updated: 2018-08-04 19:26:11 UTC+0000
+
+Subkeys:
+
+Values:
+REG_SZ        ComputerName    : (V) WIN-LO6FAF3DTFE 
+
+
+1.imageinfo
+          Suggested Profile(s) : Win7SP1x64, Win7SP0x64, Win2008R2SP0x64, Win2008R2SP1x64_23418, Win2008R2SP1x64, Win7SP1x64_23418
+                     AS Layer1 : WindowsAMD64PagedMemory (Kernel AS)
+                     AS Layer2 : FileAddressSpace (/Users/realsung/Desktop/major/Vol_Automation-Tool/OtterCTF.vmem)
+                      PAE type : No PAE
+                           DTB : 0x187000L
+                          KDBG : 0xf80002c430a0L
+          Number of Processors : 2
+     Image Type (Service Pack) : 1
+                KPCR for CPU 0 : 0xfffff80002c44d00L
+                KPCR for CPU 1 : 0xfffff880009ef000L
+             KUSER_SHARED_DATA : 0xfffff78000000000L
+           Image date and time : 2018-08-04 19:34:22 UTC+0000
+     Image local date and time : 2018-08-04 22:34:22 +0300
+
+
+2.psxview
+Offset(P)          Name                    PID pslist psscan thrdproc pspcid csrss session deskthrd ExitTime
+------------------ -------------------- ------ ------ ------ -------- ------ ----- ------- -------- --------
+0x000000007dde7800 svchost.exe            1948 True   True   True     True   True  True    True     
+0x000000007e4c2700 mscorsvw.exe           3124 True   True   True     True   True  True    True     
+0x000000007d6c9b30 bittorrentie.e         2624 True   True   True     True   True  True    True     
+0x000000007ded37e0 svchost.exe             620 True   True   True     True   True  True    True     
+0x000000007e702b30 chrome.exe              576 True   True   True     True   True  True    True     
+0x000000007df718a0 svchost.exe            1164 True   True   True     True   True  True    True     
+0x000000007e4e4b30 svchost.exe            3196 True   True   True     True   True  True    True     
+0x000000007dc92920 vmtoolsd.exe           1428 True   True   True     True   True  True    True     
+0x000000007fc3c890 svchost.exe             604 True   True   True     True   True  True    True     
+0x000000007dbfd960 notepad.exe            3304 True   True   True     True   True  True    True     
+0x000000007e6c5b30 vmware-tray.ex         3720 True   True   True     True   True  True    True     
+0x000000007de2e9e0 svchost.exe             808 True   True   True     True   True  True    True     
+0x000000007d686b30 Rick And Morty         3820 True   True   True     True   True  True    True     
+0x000000007e435240 chrome.exe             3648 True   True   True     True   True  True    True     
+0x000000007d6a7b30 bittorrentie.e         2308 True   True   True     True   True  True    True     
+0x000000007e6eab30 chrome.exe             4084 True   True   True     True   True  True    True     
+0x000000007de753a0 audiodg.exe             960 True   True   True     True   True  True    True     
+0x000000007de4db30 svchost.exe             868 True   True   True     True   True  True    True     
+0x000000007dbe9b30 taskhost.exe           2344 True   True   True     True   True  True    True     
+0x000000007d9aab30 SearchIndexer.         3064 True   True   True     True   True  True    True     
+0x000000007e1ebb30 svchost.exe             712 True   True   True     True   True  True    True     
+0x000000007fb24b30 WmiPrvSE.exe           1800 True   True   True     True   True  True    True     
+0x000000007de31b30 svchost.exe             844 True   True   True     True   True  True    True     
+0x000000007dc7f630 dllhost.exe            1324 True   True   True     True   True  True    True     
+0x000000007e0d1060 Lavasoft.WCAss         3496 True   True   True     True   True  True    True     
+0x000000007e7ef1f0 chrome.exe             1796 True   True   True     True   True  True    True     
+0x000000007db12060 WmiPrvSE.exe           2136 True   True   True     True   True  True    True     
+0x000000007e000a90 chrome.exe             3924 True   True   True     True   True  True    True     
+0x000000007e0f4060 winlogon.exe            432 True   True   True     True   True  True    True     
+0x000000007e1377c0 services.exe            492 True   True   True     True   True  True    False    
+0x000000007de97060 svchost.exe            1012 True   True   True     True   True  True    True     
+0x000000007d832060 sppsvc.exe             2500 True   True   True     True   True  True    True     
+0x000000007db8f060 WebCompanionIn         3880 True   True   True     True   True  True    True     
+0x000000007d890b30 BitTorrent.exe         2836 True   True   True     True   True  True    True     
+0x000000007e13f060 lsass.exe               500 True   True   True     True   True  True    False    
+0x000000007ddf3b30 msdtc.exe              1436 True   True   True     True   True  True    True     
+0x000000007e4643d0 conhost.exe            2420 True   True   False    True   True  True    False    2018-08-04 19:34:22 UTC+0000
+0x000000007e1461a0 lsm.exe                 508 True   True   True     True   True  True    False    
+0x000000007dc0f630 VGAuthService.         1356 True   True   True     True   True  True    True     
+0x000000007e6f7b30 chrome.exe             1808 True   True   True     True   True  True    True     
+0x000000007e8ed060 wininit.exe             396 True   True   True     True   True  True    True     
+0x000000007d403610 mscorsvw.exe            412 True   True   True     True   True  True    True     
+0x000000007d87e060 explorer.exe           2728 True   True   True     True   True  True    True     
+0x000000007e6e3870 chrome.exe             4076 True   True   True     True   True  True    True     
+0x000000007e4268b0 WebCompanion.e         3856 True   True   True     True   True  True    True     
+0x000000007e5f98f0 chrome.exe             2748 True   True   True     True   True  True    True     
+0x000000007d7cb740 LunarMS.exe             708 True   True   True     True   True  True    True     
+0x000000007e4af9f0 svchost.exe             164 True   True   True     True   True  True    True     
+0x000000007e1bdb30 vmacthlp.exe            668 True   True   True     True   True  True    True     
+0x000000007dbcdb30 vmtoolsd.exe           2804 True   True   True     True   True  True    True     
+0x000000007f28c2d0 PresentationFo          724 True   True   True     True   True  True    True     
+0x000000007dbfab30 dwm.exe                2704 True   True   True     True   True  True    True     
+0x000000007df5ab30 spoolsv.exe            1120 True   True   True     True   True  True    True     
+0x000000007eac8380 csrss.exe               348 True   True   True     True   False True    True     
+0x000000007e072b30 sc.exe                 3504 True   True   False    True   False True    False    2018-08-04 19:33:48 UTC+0000
+0x000000007da8f060 sc.exe                 3208 True   True   False    True   False True    False    2018-08-04 19:33:48 UTC+0000
+0x000000007fe83740 System                    4 True   True   True     True   False False   False    
+0x000000007f2d3b30 csrss.exe               388 True   True   True     True   False True    True     
+0x000000007e772b30 cmd.exe                3916 True   True   False    True   False True    False    2018-08-04 19:34:22 UTC+0000
+0x000000007f67e4d0 smss.exe                260 True   True   True     True   False False   False    
+0x000000007d8f02e0 WebCompanion.e         2844 True   True   False    True   False True    False    2018-08-04 19:33:33 UTC+0000
+0x000000007dcb6890 sc.exe                  452 True   True   False    True   False True    False    2018-08-04 19:33:48 UTC+0000
+0x000000007de01060 sc.exe                 2028 True   True   False    True   False True    False    2018-08-04 19:34:03 UTC+0000
+0x000000007dce7b30 SearchFilterHo         2740 False  True   False    False  False False   False    2018-08-04 19:34:22 UTC+0000
+0x000000007e7fe210 SearchProtocol         3428 False  True   False    False  False False   False    2018-08-04 19:34:22 UTC+0000
+0x000000007e5bfb30 ipconfig.exe           3788 False  True   False    False  False False   False    2018-08-04 19:34:22 UTC+0000
+
+
+3.pstree
+Name                                                  Pid   PPid   Thds   Hnds Time
+-------------------------------------------------- ------ ------ ------ ------ ----
+ 0xfffffa801b27e060:explorer.exe                     2728   2696     33    854 2018-08-04 19:27:04 UTC+0000
+. 0xfffffa801b486b30:Rick And Morty                  3820   2728      4    185 2018-08-04 19:32:55 UTC+0000
+.. 0xfffffa801a4c5b30:vmware-tray.ex                 3720   3820      8    147 2018-08-04 19:33:02 UTC+0000
+. 0xfffffa801b2f02e0:WebCompanion.e                  2844   2728      0 ------ 2018-08-04 19:27:07 UTC+0000
+. 0xfffffa801a4e3870:chrome.exe                      4076   2728     44   1160 2018-08-04 19:29:30 UTC+0000
+.. 0xfffffa801a4eab30:chrome.exe                     4084   4076      8     86 2018-08-04 19:29:30 UTC+0000
+.. 0xfffffa801a5ef1f0:chrome.exe                     1796   4076     15    170 2018-08-04 19:33:41 UTC+0000
+.. 0xfffffa801aa00a90:chrome.exe                     3924   4076     16    228 2018-08-04 19:29:51 UTC+0000
+.. 0xfffffa801a635240:chrome.exe                     3648   4076     16    207 2018-08-04 19:33:38 UTC+0000
+.. 0xfffffa801a502b30:chrome.exe                      576   4076      2     58 2018-08-04 19:29:31 UTC+0000
+.. 0xfffffa801a4f7b30:chrome.exe                     1808   4076     13    229 2018-08-04 19:29:32 UTC+0000
+.. 0xfffffa801a7f98f0:chrome.exe                     2748   4076     15    181 2018-08-04 19:31:15 UTC+0000
+. 0xfffffa801b5cb740:LunarMS.exe                      708   2728     18    346 2018-08-04 19:27:39 UTC+0000
+. 0xfffffa801b1cdb30:vmtoolsd.exe                    2804   2728      6    190 2018-08-04 19:27:06 UTC+0000
+. 0xfffffa801b290b30:BitTorrent.exe                  2836   2728     24    471 2018-08-04 19:27:07 UTC+0000
+.. 0xfffffa801b4c9b30:bittorrentie.e                 2624   2836     13    316 2018-08-04 19:27:21 UTC+0000
+.. 0xfffffa801b4a7b30:bittorrentie.e                 2308   2836     15    337 2018-08-04 19:27:19 UTC+0000
+ 0xfffffa8018d44740:System                              4      0     95    411 2018-08-04 19:26:03 UTC+0000
+. 0xfffffa801947e4d0:smss.exe                         260      4      2     30 2018-08-04 19:26:03 UTC+0000
+ 0xfffffa801a2ed060:wininit.exe                       396    336      3     78 2018-08-04 19:26:11 UTC+0000
+. 0xfffffa801ab377c0:services.exe                     492    396     11    242 2018-08-04 19:26:12 UTC+0000
+.. 0xfffffa801afe7800:svchost.exe                    1948    492      6     96 2018-08-04 19:26:42 UTC+0000
+.. 0xfffffa801ae92920:vmtoolsd.exe                   1428    492      9    313 2018-08-04 19:26:27 UTC+0000
+... 0xfffffa801a572b30:cmd.exe                       3916   1428      0 ------ 2018-08-04 19:34:22 UTC+0000
+.. 0xfffffa801ae0f630:VGAuthService.                 1356    492      3     85 2018-08-04 19:26:25 UTC+0000
+.. 0xfffffa801abbdb30:vmacthlp.exe                    668    492      3     56 2018-08-04 19:26:16 UTC+0000
+.. 0xfffffa801aad1060:Lavasoft.WCAss                 3496    492     14    473 2018-08-04 19:33:49 UTC+0000
+.. 0xfffffa801a6af9f0:svchost.exe                     164    492     12    147 2018-08-04 19:28:42 UTC+0000
+.. 0xfffffa801ac2e9e0:svchost.exe                     808    492     22    508 2018-08-04 19:26:18 UTC+0000
+... 0xfffffa801ac753a0:audiodg.exe                    960    808      7    151 2018-08-04 19:26:19 UTC+0000
+.. 0xfffffa801ae7f630:dllhost.exe                    1324    492     15    207 2018-08-04 19:26:42 UTC+0000
+.. 0xfffffa801a6c2700:mscorsvw.exe                   3124    492      7     77 2018-08-04 19:28:43 UTC+0000
+.. 0xfffffa801b232060:sppsvc.exe                     2500    492      4    149 2018-08-04 19:26:58 UTC+0000
+.. 0xfffffa801abebb30:svchost.exe                     712    492      8    301 2018-08-04 19:26:17 UTC+0000
+.. 0xfffffa801ad718a0:svchost.exe                    1164    492     18    312 2018-08-04 19:26:23 UTC+0000
+.. 0xfffffa801ac31b30:svchost.exe                     844    492     17    396 2018-08-04 19:26:18 UTC+0000
+... 0xfffffa801b1fab30:dwm.exe                       2704    844      4     97 2018-08-04 19:27:04 UTC+0000
+.. 0xfffffa801988c2d0:PresentationFo                  724    492      6    148 2018-08-04 19:27:52 UTC+0000
+.. 0xfffffa801b603610:mscorsvw.exe                    412    492      7     86 2018-08-04 19:28:42 UTC+0000
+.. 0xfffffa8018e3c890:svchost.exe                     604    492     11    376 2018-08-04 19:26:16 UTC+0000
+... 0xfffffa8019124b30:WmiPrvSE.exe                  1800    604      9    222 2018-08-04 19:26:39 UTC+0000
+... 0xfffffa801b112060:WmiPrvSE.exe                  2136    604     12    324 2018-08-04 19:26:51 UTC+0000
+.. 0xfffffa801ad5ab30:spoolsv.exe                    1120    492     14    346 2018-08-04 19:26:22 UTC+0000
+.. 0xfffffa801ac4db30:svchost.exe                     868    492     45   1114 2018-08-04 19:26:18 UTC+0000
+.. 0xfffffa801a6e4b30:svchost.exe                    3196    492     14    352 2018-08-04 19:28:44 UTC+0000
+.. 0xfffffa801acd37e0:svchost.exe                     620    492     19    415 2018-08-04 19:26:21 UTC+0000
+.. 0xfffffa801b1e9b30:taskhost.exe                   2344    492      8    193 2018-08-04 19:26:57 UTC+0000
+.. 0xfffffa801ac97060:svchost.exe                    1012    492     12    554 2018-08-04 19:26:20 UTC+0000
+.. 0xfffffa801b3aab30:SearchIndexer.                 3064    492     11    610 2018-08-04 19:27:14 UTC+0000
+.. 0xfffffa801aff3b30:msdtc.exe                      1436    492     14    155 2018-08-04 19:26:43 UTC+0000
+. 0xfffffa801ab3f060:lsass.exe                        500    396      7    610 2018-08-04 19:26:12 UTC+0000
+. 0xfffffa801ab461a0:lsm.exe                          508    396     10    148 2018-08-04 19:26:12 UTC+0000
+ 0xfffffa801a0c8380:csrss.exe                         348    336      9    563 2018-08-04 19:26:10 UTC+0000
+. 0xfffffa801a6643d0:conhost.exe                     2420    348      0     30 2018-08-04 19:34:22 UTC+0000
+ 0xfffffa80198d3b30:csrss.exe                         388    380     11    460 2018-08-04 19:26:11 UTC+0000
+ 0xfffffa801aaf4060:winlogon.exe                      432    380      3    113 2018-08-04 19:26:11 UTC+0000
+ 0xfffffa801b18f060:WebCompanionIn                   3880   1484     15    522 2018-08-04 19:33:07 UTC+0000
+. 0xfffffa801aa72b30:sc.exe                          3504   3880      0 ------ 2018-08-04 19:33:48 UTC+0000
+. 0xfffffa801aeb6890:sc.exe                           452   3880      0 ------ 2018-08-04 19:33:48 UTC+0000
+. 0xfffffa801a6268b0:WebCompanion.e                  3856   3880     15    386 2018-08-04 19:34:05 UTC+0000
+. 0xfffffa801b08f060:sc.exe                          3208   3880      0 ------ 2018-08-04 19:33:47 UTC+0000
+. 0xfffffa801ac01060:sc.exe                          2028   3880      0 ------ 2018-08-04 19:33:49 UTC+0000
+ 0xfffffa801b1fd960:notepad.exe                      3304   3132      2     79 2018-08-04 19:34:10 UTC+0000
+
+
+4.netscan
+Offset(P)          Proto    Local Address                  Foreign Address      State            Pid      Owner          Created
+0x7d60f010         UDPv4    0.0.0.0:1900                   *:*                                   2836     BitTorrent.exe 2018-08-04 19:27:17 UTC+0000
+0x7d62b3f0         UDPv4    192.168.202.131:6771           *:*                                   2836     BitTorrent.exe 2018-08-04 19:27:22 UTC+0000
+0x7d62f4c0         UDPv4    127.0.0.1:62307                *:*                                   2836     BitTorrent.exe 2018-08-04 19:27:17 UTC+0000
+0x7d62f920         UDPv4    192.168.202.131:62306          *:*                                   2836     BitTorrent.exe 2018-08-04 19:27:17 UTC+0000
+0x7d6424c0         UDPv4    0.0.0.0:50762                  *:*                                   4076     chrome.exe     2018-08-04 19:33:37 UTC+0000
+0x7d6b4250         UDPv6    ::1:1900                       *:*                                   164      svchost.exe    2018-08-04 19:28:42 UTC+0000
+0x7d6e3230         UDPv4    127.0.0.1:6771                 *:*                                   2836     BitTorrent.exe 2018-08-04 19:27:22 UTC+0000
+0x7d6ed650         UDPv4    0.0.0.0:5355                   *:*                                   620      svchost.exe    2018-08-04 19:34:22 UTC+0000
+0x7d71c8a0         UDPv4    0.0.0.0:0                      *:*                                   868      svchost.exe    2018-08-04 19:34:22 UTC+0000
+0x7d71c8a0         UDPv6    :::0                           *:*                                   868      svchost.exe    2018-08-04 19:34:22 UTC+0000
+0x7d74a390         UDPv4    127.0.0.1:52847                *:*                                   2624     bittorrentie.e 2018-08-04 19:27:24 UTC+0000
+0x7d7602c0         UDPv4    127.0.0.1:52846                *:*                                   2308     bittorrentie.e 2018-08-04 19:27:24 UTC+0000
+0x7d787010         UDPv4    0.0.0.0:65452                  *:*                                   4076     chrome.exe     2018-08-04 19:33:42 UTC+0000
+0x7d789b50         UDPv4    0.0.0.0:50523                  *:*                                   620      svchost.exe    2018-08-04 19:34:22 UTC+0000
+0x7d789b50         UDPv6    :::50523                       *:*                                   620      svchost.exe    2018-08-04 19:34:22 UTC+0000
+0x7d92a230         UDPv4    0.0.0.0:0                      *:*                                   868      svchost.exe    2018-08-04 19:34:22 UTC+0000
+0x7d92a230         UDPv6    :::0                           *:*                                   868      svchost.exe    2018-08-04 19:34:22 UTC+0000
+0x7d9e8b50         UDPv4    0.0.0.0:20830                  *:*                                   2836     BitTorrent.exe 2018-08-04 19:27:15 UTC+0000
+0x7d9f4560         UDPv4    0.0.0.0:0                      *:*                                   3856     WebCompanion.e 2018-08-04 19:34:22 UTC+0000
+0x7d9f8cb0         UDPv4    0.0.0.0:20830                  *:*                                   2836     BitTorrent.exe 2018-08-04 19:27:15 UTC+0000
+0x7d9f8cb0         UDPv6    :::20830                       *:*                                   2836     BitTorrent.exe 2018-08-04 19:27:15 UTC+0000
+0x7d8bb390         TCPv4    0.0.0.0:9008                   0.0.0.0:0            LISTENING        4        System         
+0x7d8bb390         TCPv6    :::9008                        :::0                 LISTENING        4        System         
+0x7d9a9240         TCPv4    0.0.0.0:8733                   0.0.0.0:0            LISTENING        4        System         
+0x7d9a9240         TCPv6    :::8733                        :::0                 LISTENING        4        System         
+0x7d9e19e0         TCPv4    0.0.0.0:20830                  0.0.0.0:0            LISTENING        2836     BitTorrent.exe 
+0x7d9e19e0         TCPv6    :::20830                       :::0                 LISTENING        2836     BitTorrent.exe 
+0x7d9e1c90         TCPv4    0.0.0.0:20830                  0.0.0.0:0            LISTENING        2836     BitTorrent.exe 
+0x7d42ba90         TCPv4    -:0                            56.219.196.26:0      CLOSED           2836     BitTorrent.exe 
+0x7d6124d0         TCPv4    192.168.202.131:49530          77.102.199.102:7575  CLOSED           708      LunarMS.exe    
+0x7d62d690         TCPv4    192.168.202.131:49229          169.1.143.215:8999   CLOSED           2836     BitTorrent.exe 
+0x7d634350         TCPv6    -:0                            38db:c41a:80fa:ffff:38db:c41a:80fa:ffff:0 CLOSED           2836     BitTorrent.exe 
+0x7d6f27f0         TCPv4    192.168.202.131:50381          71.198.155.180:34674 CLOSED           2836     BitTorrent.exe 
+0x7d704010         TCPv4    192.168.202.131:50382          92.251.23.204:6881   CLOSED           2836     BitTorrent.exe 
+0x7d708cf0         TCPv4    192.168.202.131:50364          91.140.89.116:31847  CLOSED           2836     BitTorrent.exe 
+0x7d729620         TCPv4    -:50034                        142.129.37.27:24578  CLOSED           2836     BitTorrent.exe 
+0x7d72cbe0         TCPv4    192.168.202.131:50340          23.37.43.27:80       CLOSED           3496     Lavasoft.WCAss 
+0x7d7365a0         TCPv4    192.168.202.131:50358          23.37.43.27:80       CLOSED           3856     WebCompanion.e 
+0x7d81c890         TCPv4    192.168.202.131:50335          185.154.111.20:60405 CLOSED           2836     BitTorrent.exe 
+0x7d8fd530         TCPv4    192.168.202.131:50327          23.37.43.27:80       CLOSED           3496     Lavasoft.WCAss 
+0x7d9cecf0         TCPv4    192.168.202.131:50373          173.239.232.46:2997  CLOSED           2836     BitTorrent.exe 
+0x7d9d7cf0         TCPv4    192.168.202.131:50371          191.253.122.149:59163 CLOSED           2836     BitTorrent.exe 
+0x7daefec0         UDPv4    0.0.0.0:0                      *:*                                   3856     WebCompanion.e 2018-08-04 19:34:22 UTC+0000
+0x7daefec0         UDPv6    :::0                           *:*                                   3856     WebCompanion.e 2018-08-04 19:34:22 UTC+0000
+0x7db83b90         UDPv4    0.0.0.0:0                      *:*                                   3880     WebCompanionIn 2018-08-04 19:33:30 UTC+0000
+0x7db83b90         UDPv6    :::0                           *:*                                   3880     WebCompanionIn 2018-08-04 19:33:30 UTC+0000
+0x7db9cdd0         UDPv4    0.0.0.0:0                      *:*                                   2844     WebCompanion.e 2018-08-04 19:30:05 UTC+0000
+0x7db9cdd0         UDPv6    :::0                           *:*                                   2844     WebCompanion.e 2018-08-04 19:30:05 UTC+0000
+0x7dc2dc30         UDPv4    0.0.0.0:50879                  *:*                                   4076     chrome.exe     2018-08-04 19:30:41 UTC+0000
+0x7dc2dc30         UDPv6    :::50879                       *:*                                   4076     chrome.exe     2018-08-04 19:30:41 UTC+0000
+0x7dc83810         UDPv4    0.0.0.0:5355                   *:*                                   620      svchost.exe    2018-08-04 19:34:22 UTC+0000
+0x7dc83810         UDPv6    :::5355                        *:*                                   620      svchost.exe    2018-08-04 19:34:22 UTC+0000
+0x7dd82c30         UDPv4    0.0.0.0:5355                   *:*                                   620      svchost.exe    2018-08-04 19:26:38 UTC+0000
+0x7df00980         UDPv4    0.0.0.0:0                      *:*                                   620      svchost.exe    2018-08-04 19:34:22 UTC+0000
+0x7df00980         UDPv6    :::0                           *:*                                   620      svchost.exe    2018-08-04 19:34:22 UTC+0000
+0x7df04cc0         UDPv4    0.0.0.0:5355                   *:*                                   620      svchost.exe    2018-08-04 19:26:38 UTC+0000
+0x7df04cc0         UDPv6    :::5355                        *:*                                   620      svchost.exe    2018-08-04 19:26:38 UTC+0000
+0x7df5f010         UDPv4    0.0.0.0:55175                  *:*                                   620      svchost.exe    2018-08-04 19:34:22 UTC+0000
+0x7dfab010         UDPv4    0.0.0.0:58383                  *:*                                   620      svchost.exe    2018-08-04 19:34:22 UTC+0000
+0x7dfab010         UDPv6    :::58383                       *:*                                   620      svchost.exe    2018-08-04 19:34:22 UTC+0000
+0x7e12c1c0         UDPv4    0.0.0.0:0                      *:*                                   3880     WebCompanionIn 2018-08-04 19:33:27 UTC+0000
+0x7e163a40         UDPv4    0.0.0.0:0                      *:*                                   3880     WebCompanionIn 2018-08-04 19:33:27 UTC+0000
+0x7e163a40         UDPv6    :::0                           *:*                                   3880     WebCompanionIn 2018-08-04 19:33:27 UTC+0000
+0x7e1cf010         UDPv4    192.168.202.131:137            *:*                                   4        System         2018-08-04 19:26:35 UTC+0000
+0x7e1da010         UDPv4    192.168.202.131:138            *:*                                   4        System         2018-08-04 19:26:35 UTC+0000
+0x7dc4ad30         TCPv4    0.0.0.0:49155                  0.0.0.0:0            LISTENING        500      lsass.exe      
+0x7dc4ad30         TCPv6    :::49155                       :::0                 LISTENING        500      lsass.exe      
+0x7dc4b370         TCPv4    0.0.0.0:49155                  0.0.0.0:0            LISTENING        500      lsass.exe      
+0x7dd71010         TCPv4    0.0.0.0:445                    0.0.0.0:0            LISTENING        4        System         
+0x7dd71010         TCPv6    :::445                         :::0                 LISTENING        4        System         
+0x7ddca6b0         TCPv4    0.0.0.0:49156                  0.0.0.0:0            LISTENING        492      services.exe   
+0x7ddcbc00         TCPv4    0.0.0.0:49156                  0.0.0.0:0            LISTENING        492      services.exe   
+0x7ddcbc00         TCPv6    :::49156                       :::0                 LISTENING        492      services.exe   
+0x7de09c30         TCPv4    0.0.0.0:49152                  0.0.0.0:0            LISTENING        396      wininit.exe    
+0x7de09c30         TCPv6    :::49152                       :::0                 LISTENING        396      wininit.exe    
+0x7de0d7b0         TCPv4    0.0.0.0:49152                  0.0.0.0:0            LISTENING        396      wininit.exe    
+0x7de424e0         TCPv4    0.0.0.0:49153                  0.0.0.0:0            LISTENING        808      svchost.exe    
+0x7de45ef0         TCPv4    0.0.0.0:49153                  0.0.0.0:0            LISTENING        808      svchost.exe    
+0x7de45ef0         TCPv6    :::49153                       :::0                 LISTENING        808      svchost.exe    
+0x7df3d270         TCPv4    0.0.0.0:49154                  0.0.0.0:0            LISTENING        868      svchost.exe    
+0x7df3eef0         TCPv4    0.0.0.0:49154                  0.0.0.0:0            LISTENING        868      svchost.exe    
+0x7df3eef0         TCPv6    :::49154                       :::0                 LISTENING        868      svchost.exe    
+0x7e1f6010         TCPv4    0.0.0.0:135                    0.0.0.0:0            LISTENING        712      svchost.exe    
+0x7e1f6010         TCPv6    :::135                         :::0                 LISTENING        712      svchost.exe    
+0x7e1f8ef0         TCPv4    0.0.0.0:135                    0.0.0.0:0            LISTENING        712      svchost.exe    
+0x7db000a0         TCPv4    -:50091                        93.142.197.107:32645 CLOSED           2836     BitTorrent.exe 
+0x7db132e0         TCPv4    192.168.202.131:50280          72.55.154.81:80      CLOSED           3880     WebCompanionIn 
+0x7dbc3010         TCPv6    -:0                            4847:d418:80fa:ffff:4847:d418:80fa:ffff:0 CLOSED           4076     chrome.exe     
+0x7dc4bcf0         TCPv4    -:0                            104.240.179.26:0     CLOSED           3        ?4????       
+0x7dc83080         TCPv4    192.168.202.131:50377          179.108.238.10:19761 CLOSED           2836     BitTorrent.exe 
+0x7dd451f0         TCPv4    192.168.202.131:50321          45.27.208.145:51414  CLOSED           2836     BitTorrent.exe 
+0x7ddae890         TCPv4    -:50299                        212.92.105.227:8999  CLOSED           2836     BitTorrent.exe 
+0x7ddff010         TCPv4    192.168.202.131:50379          23.37.43.27:80       CLOSED           3856     WebCompanion.e 
+0x7e0057d0         TCPv4    192.168.202.131:50353          85.242.139.158:51413 CLOSED           2836     BitTorrent.exe 
+0x7e0114b0         TCPv4    192.168.202.131:50339          77.65.111.216:8306   CLOSED           2836     BitTorrent.exe 
+0x7e042cf0         TCPv4    192.168.202.131:50372          83.44.27.35:52103    CLOSED           2836     BitTorrent.exe 
+0x7e08a010         TCPv4    192.168.202.131:50374          89.46.49.163:20133   CLOSED           2836     BitTorrent.exe 
+0x7e092010         TCPv4    192.168.202.131:50378          120.29.114.41:13155  CLOSED           2836     BitTorrent.exe 
+0x7e094b90         TCPv4    192.168.202.131:50365          52.91.1.182:55125    CLOSED           2836     BitTorrent.exe 
+0x7e09ba90         TCPv6    -:0                            68f0:181b:80fa:ffff:68f0:181b:80fa:ffff:0 CLOSED           2836     BitTorrent.exe 
+0x7e0a8b90         TCPv4    192.168.202.131:50341          72.55.154.81:80      CLOSED           3880     WebCompanionIn 
+0x7e0d6180         TCPv4    192.168.202.131:50349          196.250.217.22:32815 CLOSED           2836     BitTorrent.exe 
+0x7e108100         TCPv4    192.168.202.131:50360          174.0.234.77:31240   CLOSED           2836     BitTorrent.exe 
+0x7e124910         TCPv4    192.168.202.131:50366          89.78.106.196:51413  CLOSED           2836     BitTorrent.exe 
+0x7e14dcf0         TCPv4    192.168.202.131:50363          122.62.218.159:11627 CLOSED           2836     BitTorrent.exe 
+0x7e18bcf0         TCPv4    192.168.202.131:50333          191.177.124.34:21011 CLOSED           2836     BitTorrent.exe 
+0x7e1f7ab0         TCPv4    -:0                            56.187.190.26:0      CLOSED           3        ?4????       
+0x7e48d9c0         UDPv6    fe80::b06b:a531:ec88:457f:1900 *:*                                   164      svchost.exe    2018-08-04 19:28:42 UTC+0000
+0x7e4ad870         UDPv4    127.0.0.1:1900                 *:*                                   164      svchost.exe    2018-08-04 19:28:42 UTC+0000
+0x7e511bb0         UDPv4    0.0.0.0:60005                  *:*                                   620      svchost.exe    2018-08-04 19:34:22 UTC+0000
+0x7e5dc3b0         UDPv6    fe80::b06b:a531:ec88:457f:546  *:*                                   808      svchost.exe    2018-08-04 19:33:28 UTC+0000
+0x7e7469c0         UDPv4    0.0.0.0:50878                  *:*                                   4076     chrome.exe     2018-08-04 19:30:39 UTC+0000
+0x7e7469c0         UDPv6    :::50878                       *:*                                   4076     chrome.exe     2018-08-04 19:30:39 UTC+0000
+0x7e77cb00         UDPv4    0.0.0.0:50748                  *:*                                   4076     chrome.exe     2018-08-04 19:30:07 UTC+0000
+0x7e77cb00         UDPv6    :::50748                       *:*                                   4076     chrome.exe     2018-08-04 19:30:07 UTC+0000
+0x7e79f3f0         UDPv4    0.0.0.0:5353                   *:*                                   4076     chrome.exe     2018-08-04 19:29:35 UTC+0000
+0x7e7a0ec0         UDPv4    0.0.0.0:5353                   *:*                                   4076     chrome.exe     2018-08-04 19:29:35 UTC+0000
+0x7e7a0ec0         UDPv6    :::5353                        *:*                                   4076     chrome.exe     2018-08-04 19:29:35 UTC+0000
+0x7e7a3960         UDPv4    0.0.0.0:0                      *:*                                   3880     WebCompanionIn 2018-08-04 19:33:30 UTC+0000
+0x7e7dd010         UDPv6    ::1:58340                      *:*                                   164      svchost.exe    2018-08-04 19:28:42 UTC+0000
+0x7e413a40         TCPv4    -:0                            -:0                  CLOSED           708      LunarMS.exe    
+0x7e415010         TCPv4    192.168.202.131:50346          89.64.10.176:10589   CLOSED           2836     BitTorrent.exe 
+0x7e4202d0         TCPv4    192.168.202.131:50217          104.18.21.226:80     CLOSED           3880     WebCompanionIn 
+0x7e45f110         TCPv4    192.168.202.131:50211          104.18.20.226:80     CLOSED           3880     WebCompanionIn 
+0x7e4cc910         TCPv4    192.168.202.131:50228          104.18.20.226:80     CLOSED           3880     WebCompanionIn 
+0x7e512950         TCPv4    192.168.202.131:50345          77.126.30.221:13905  CLOSED           2836     BitTorrent.exe 
+0x7e521b50         TCPv4    -:0                            -:0                  CLOSED           708      LunarMS.exe    
+0x7e5228d0         TCPv4    192.168.202.131:50075          70.65.116.120:52700  CLOSED           2836     BitTorrent.exe 
+0x7e52f010         TCPv4    192.168.202.131:50343          86.121.4.189:46392   CLOSED           2836     BitTorrent.exe 
+0x7e563860         TCPv4    192.168.202.131:50170          103.232.25.44:25384  CLOSED           2836     BitTorrent.exe 
+0x7e572cf0         TCPv4    192.168.202.131:50125          122.62.218.159:11627 CLOSED           2836     BitTorrent.exe 
+0x7e5d6cf0         TCPv4    192.168.202.131:50324          54.197.8.177:49420   CLOSED           2836     BitTorrent.exe 
+0x7e71b010         TCPv4    192.168.202.131:50344          70.27.98.75:6881     CLOSED           2836     BitTorrent.exe 
+0x7e71d010         TCPv4    192.168.202.131:50351          99.251.199.160:1045  CLOSED           2836     BitTorrent.exe 
+0x7e74b010         TCPv4    192.168.202.131:50385          209.236.6.89:56500   CLOSED           2836     BitTorrent.exe 
+0x7e78b7f0         TCPv4    192.168.202.131:50238          72.55.154.82:80      CLOSED           3880     WebCompanionIn 
+0x7e7ae380         TCPv4    192.168.202.131:50361          5.34.21.181:8999     CLOSED           2836     BitTorrent.exe 
+0x7e7b0380         TCPv6    -:0                            4847:d418:80fa:ffff:4847:d418:80fa:ffff:0 CLOSED           2836     BitTorrent.exe 
+0x7e7b9010         TCPv4    192.168.202.131:50334          188.129.94.129:25128 CLOSED           2836     BitTorrent.exe 
+0x7e94b010         TCPv4    192.168.202.131:50356          77.126.30.221:13905  CLOSED           2836     BitTorrent.exe 
+0x7e9ad840         TCPv4    192.168.202.131:50380          84.52.144.29:56299   CLOSED           2836     BitTorrent.exe 
+0x7e9bacf0         TCPv4    192.168.202.131:50350          77.253.242.0:5000    CLOSED           2836     BitTorrent.exe 
+0x7eaac5e0         TCPv4    192.168.202.131:50387          93.184.220.29:80     CLOSED           3856     WebCompanion.e 
+0x7eab4cf0         TCPv4    -:0                            56.219.196.26:0      CLOSED           2836     BitTorrent.exe 
+0x7fb9cec0         UDPv4    192.168.202.131:1900           *:*                                   164      svchost.exe    2018-08-04 19:28:42 UTC+0000
+0x7fb9d430         UDPv4    127.0.0.1:58341                *:*                                   164      svchost.exe    2018-08-04 19:28:42 UTC+0000
+
+
+6.hivescan
+Virtual            Physical           Name
+------------------ ------------------ ----
+0xfffff8a00377d2d0 0x00000000624162d0 \??\C:\System Volume Information\Syscache.hve
+0xfffff8a00000f010 0x000000002d4c1010 [no name]
+0xfffff8a000024010 0x000000002d50c010 \REGISTRY\MACHINE\SYSTEM
+0xfffff8a000053320 0x000000002d5bb320 \REGISTRY\MACHINE\HARDWARE
+0xfffff8a000109410 0x0000000029cb4410 \SystemRoot\System32\Config\SECURITY
+0xfffff8a00033d410 0x000000002a958410 \Device\HarddiskVolume1\Boot\BCD
+0xfffff8a0005d5010 0x000000002a983010 \SystemRoot\System32\Config\SOFTWARE
+0xfffff8a001495010 0x0000000024912010 \SystemRoot\System32\Config\DEFAULT
+0xfffff8a0016d4010 0x00000000214e1010 \SystemRoot\System32\Config\SAM
+0xfffff8a00175b010 0x00000000211eb010 \??\C:\Windows\ServiceProfiles\NetworkService\NTUSER.DAT
+0xfffff8a00176e410 0x00000000206db410 \??\C:\Windows\ServiceProfiles\LocalService\NTUSER.DAT
+0xfffff8a002090010 0x000000000b92b010 \??\C:\Users\Rick\ntuser.dat
+0xfffff8a0020ad410 0x000000000db41410 \??\C:\Users\Rick\AppData\Local\Microsoft\Windows\UsrClass.dat
+
+
+7.Significant Registry
+Legend: (S) = Stable   (V) = Volatile
+
+----------------------------
+Registry: \REGISTRY\MACHINE\SYSTEM
+Key name: ActiveComputerName (V)
+Last updated: 2018-08-04 19:26:11 UTC+0000
+
+Subkeys:
+
+Values:
+REG_SZ        ComputerName    : (V) WIN-LO6FAF3DTFE 
+
+
+1.imageinfo
+          Suggested Profile(s) : Win7SP1x64, Win7SP0x64, Win2008R2SP0x64, Win2008R2SP1x64_23418, Win2008R2SP1x64, Win7SP1x64_23418
+                     AS Layer1 : WindowsAMD64PagedMemory (Kernel AS)
+                     AS Layer2 : FileAddressSpace (/Users/realsung/Desktop/major/Vol_Automation-Tool/OtterCTF.vmem)
+                      PAE type : No PAE
+                           DTB : 0x187000L
+                          KDBG : 0xf80002c430a0L
+          Number of Processors : 2
+     Image Type (Service Pack) : 1
+                KPCR for CPU 0 : 0xfffff80002c44d00L
+                KPCR for CPU 1 : 0xfffff880009ef000L
+             KUSER_SHARED_DATA : 0xfffff78000000000L
+           Image date and time : 2018-08-04 19:34:22 UTC+0000
+     Image local date and time : 2018-08-04 22:34:22 +0300
+
+
+2.psxview
+Offset(P)          Name                    PID pslist psscan thrdproc pspcid csrss session deskthrd ExitTime
+------------------ -------------------- ------ ------ ------ -------- ------ ----- ------- -------- --------
+0x000000007dde7800 svchost.exe            1948 True   True   True     True   True  True    True     
+0x000000007e4c2700 mscorsvw.exe           3124 True   True   True     True   True  True    True     
+0x000000007d6c9b30 bittorrentie.e         2624 True   True   True     True   True  True    True     
+0x000000007ded37e0 svchost.exe             620 True   True   True     True   True  True    True     
+0x000000007e702b30 chrome.exe              576 True   True   True     True   True  True    True     
+0x000000007df718a0 svchost.exe            1164 True   True   True     True   True  True    True     
+0x000000007e4e4b30 svchost.exe            3196 True   True   True     True   True  True    True     
+0x000000007dc92920 vmtoolsd.exe           1428 True   True   True     True   True  True    True     
+0x000000007fc3c890 svchost.exe             604 True   True   True     True   True  True    True     
+0x000000007dbfd960 notepad.exe            3304 True   True   True     True   True  True    True     
+0x000000007e6c5b30 vmware-tray.ex         3720 True   True   True     True   True  True    True     
+0x000000007de2e9e0 svchost.exe             808 True   True   True     True   True  True    True     
+0x000000007d686b30 Rick And Morty         3820 True   True   True     True   True  True    True     
+0x000000007e435240 chrome.exe             3648 True   True   True     True   True  True    True     
+0x000000007d6a7b30 bittorrentie.e         2308 True   True   True     True   True  True    True     
+0x000000007e6eab30 chrome.exe             4084 True   True   True     True   True  True    True     
+0x000000007de753a0 audiodg.exe             960 True   True   True     True   True  True    True     
+0x000000007de4db30 svchost.exe             868 True   True   True     True   True  True    True     
+0x000000007dbe9b30 taskhost.exe           2344 True   True   True     True   True  True    True     
+0x000000007d9aab30 SearchIndexer.         3064 True   True   True     True   True  True    True     
+0x000000007e1ebb30 svchost.exe             712 True   True   True     True   True  True    True     
+0x000000007fb24b30 WmiPrvSE.exe           1800 True   True   True     True   True  True    True     
+0x000000007de31b30 svchost.exe             844 True   True   True     True   True  True    True     
+0x000000007dc7f630 dllhost.exe            1324 True   True   True     True   True  True    True     
+0x000000007e0d1060 Lavasoft.WCAss         3496 True   True   True     True   True  True    True     
+0x000000007e7ef1f0 chrome.exe             1796 True   True   True     True   True  True    True     
+0x000000007db12060 WmiPrvSE.exe           2136 True   True   True     True   True  True    True     
+0x000000007e000a90 chrome.exe             3924 True   True   True     True   True  True    True     
+0x000000007e0f4060 winlogon.exe            432 True   True   True     True   True  True    True     
+0x000000007e1377c0 services.exe            492 True   True   True     True   True  True    False    
+0x000000007de97060 svchost.exe            1012 True   True   True     True   True  True    True     
+0x000000007d832060 sppsvc.exe             2500 True   True   True     True   True  True    True     
+0x000000007db8f060 WebCompanionIn         3880 True   True   True     True   True  True    True     
+0x000000007d890b30 BitTorrent.exe         2836 True   True   True     True   True  True    True     
+0x000000007e13f060 lsass.exe               500 True   True   True     True   True  True    False    
+0x000000007ddf3b30 msdtc.exe              1436 True   True   True     True   True  True    True     
+0x000000007e4643d0 conhost.exe            2420 True   True   False    True   True  True    False    2018-08-04 19:34:22 UTC+0000
+0x000000007e1461a0 lsm.exe                 508 True   True   True     True   True  True    False    
+0x000000007dc0f630 VGAuthService.         1356 True   True   True     True   True  True    True     
+0x000000007e6f7b30 chrome.exe             1808 True   True   True     True   True  True    True     
+0x000000007e8ed060 wininit.exe             396 True   True   True     True   True  True    True     
+0x000000007d403610 mscorsvw.exe            412 True   True   True     True   True  True    True     
+0x000000007d87e060 explorer.exe           2728 True   True   True     True   True  True    True     
+0x000000007e6e3870 chrome.exe             4076 True   True   True     True   True  True    True     
+0x000000007e4268b0 WebCompanion.e         3856 True   True   True     True   True  True    True     
+0x000000007e5f98f0 chrome.exe             2748 True   True   True     True   True  True    True     
+0x000000007d7cb740 LunarMS.exe             708 True   True   True     True   True  True    True     
+0x000000007e4af9f0 svchost.exe             164 True   True   True     True   True  True    True     
+0x000000007e1bdb30 vmacthlp.exe            668 True   True   True     True   True  True    True     
+0x000000007dbcdb30 vmtoolsd.exe           2804 True   True   True     True   True  True    True     
+0x000000007f28c2d0 PresentationFo          724 True   True   True     True   True  True    True     
+0x000000007dbfab30 dwm.exe                2704 True   True   True     True   True  True    True     
+0x000000007df5ab30 spoolsv.exe            1120 True   True   True     True   True  True    True     
+0x000000007eac8380 csrss.exe               348 True   True   True     True   False True    True     
+0x000000007e072b30 sc.exe                 3504 True   True   False    True   False True    False    2018-08-04 19:33:48 UTC+0000
+0x000000007da8f060 sc.exe                 3208 True   True   False    True   False True    False    2018-08-04 19:33:48 UTC+0000
+0x000000007fe83740 System                    4 True   True   True     True   False False   False    
+0x000000007f2d3b30 csrss.exe               388 True   True   True     True   False True    True     
+0x000000007e772b30 cmd.exe                3916 True   True   False    True   False True    False    2018-08-04 19:34:22 UTC+0000
+0x000000007f67e4d0 smss.exe                260 True   True   True     True   False False   False    
+0x000000007d8f02e0 WebCompanion.e         2844 True   True   False    True   False True    False    2018-08-04 19:33:33 UTC+0000
+0x000000007dcb6890 sc.exe                  452 True   True   False    True   False True    False    2018-08-04 19:33:48 UTC+0000
+0x000000007de01060 sc.exe                 2028 True   True   False    True   False True    False    2018-08-04 19:34:03 UTC+0000
+0x000000007dce7b30 SearchFilterHo         2740 False  True   False    False  False False   False    2018-08-04 19:34:22 UTC+0000
+0x000000007e7fe210 SearchProtocol         3428 False  True   False    False  False False   False    2018-08-04 19:34:22 UTC+0000
+0x000000007e5bfb30 ipconfig.exe           3788 False  True   False    False  False False   False    2018-08-04 19:34:22 UTC+0000
+
+
+3.pstree
+Name                                                  Pid   PPid   Thds   Hnds Time
+-------------------------------------------------- ------ ------ ------ ------ ----
+ 0xfffffa801b27e060:explorer.exe                     2728   2696     33    854 2018-08-04 19:27:04 UTC+0000
+. 0xfffffa801b486b30:Rick And Morty                  3820   2728      4    185 2018-08-04 19:32:55 UTC+0000
+.. 0xfffffa801a4c5b30:vmware-tray.ex                 3720   3820      8    147 2018-08-04 19:33:02 UTC+0000
+. 0xfffffa801b2f02e0:WebCompanion.e                  2844   2728      0 ------ 2018-08-04 19:27:07 UTC+0000
+. 0xfffffa801a4e3870:chrome.exe                      4076   2728     44   1160 2018-08-04 19:29:30 UTC+0000
+.. 0xfffffa801a4eab30:chrome.exe                     4084   4076      8     86 2018-08-04 19:29:30 UTC+0000
+.. 0xfffffa801a5ef1f0:chrome.exe                     1796   4076     15    170 2018-08-04 19:33:41 UTC+0000
+.. 0xfffffa801aa00a90:chrome.exe                     3924   4076     16    228 2018-08-04 19:29:51 UTC+0000
+.. 0xfffffa801a635240:chrome.exe                     3648   4076     16    207 2018-08-04 19:33:38 UTC+0000
+.. 0xfffffa801a502b30:chrome.exe                      576   4076      2     58 2018-08-04 19:29:31 UTC+0000
+.. 0xfffffa801a4f7b30:chrome.exe                     1808   4076     13    229 2018-08-04 19:29:32 UTC+0000
+.. 0xfffffa801a7f98f0:chrome.exe                     2748   4076     15    181 2018-08-04 19:31:15 UTC+0000
+. 0xfffffa801b5cb740:LunarMS.exe                      708   2728     18    346 2018-08-04 19:27:39 UTC+0000
+. 0xfffffa801b1cdb30:vmtoolsd.exe                    2804   2728      6    190 2018-08-04 19:27:06 UTC+0000
+. 0xfffffa801b290b30:BitTorrent.exe                  2836   2728     24    471 2018-08-04 19:27:07 UTC+0000
+.. 0xfffffa801b4c9b30:bittorrentie.e                 2624   2836     13    316 2018-08-04 19:27:21 UTC+0000
+.. 0xfffffa801b4a7b30:bittorrentie.e                 2308   2836     15    337 2018-08-04 19:27:19 UTC+0000
+ 0xfffffa8018d44740:System                              4      0     95    411 2018-08-04 19:26:03 UTC+0000
+. 0xfffffa801947e4d0:smss.exe                         260      4      2     30 2018-08-04 19:26:03 UTC+0000
+ 0xfffffa801a2ed060:wininit.exe                       396    336      3     78 2018-08-04 19:26:11 UTC+0000
+. 0xfffffa801ab377c0:services.exe                     492    396     11    242 2018-08-04 19:26:12 UTC+0000
+.. 0xfffffa801afe7800:svchost.exe                    1948    492      6     96 2018-08-04 19:26:42 UTC+0000
+.. 0xfffffa801ae92920:vmtoolsd.exe                   1428    492      9    313 2018-08-04 19:26:27 UTC+0000
+... 0xfffffa801a572b30:cmd.exe                       3916   1428      0 ------ 2018-08-04 19:34:22 UTC+0000
+.. 0xfffffa801ae0f630:VGAuthService.                 1356    492      3     85 2018-08-04 19:26:25 UTC+0000
+.. 0xfffffa801abbdb30:vmacthlp.exe                    668    492      3     56 2018-08-04 19:26:16 UTC+0000
+.. 0xfffffa801aad1060:Lavasoft.WCAss                 3496    492     14    473 2018-08-04 19:33:49 UTC+0000
+.. 0xfffffa801a6af9f0:svchost.exe                     164    492     12    147 2018-08-04 19:28:42 UTC+0000
+.. 0xfffffa801ac2e9e0:svchost.exe                     808    492     22    508 2018-08-04 19:26:18 UTC+0000
+... 0xfffffa801ac753a0:audiodg.exe                    960    808      7    151 2018-08-04 19:26:19 UTC+0000
+.. 0xfffffa801ae7f630:dllhost.exe                    1324    492     15    207 2018-08-04 19:26:42 UTC+0000
+.. 0xfffffa801a6c2700:mscorsvw.exe                   3124    492      7     77 2018-08-04 19:28:43 UTC+0000
+.. 0xfffffa801b232060:sppsvc.exe                     2500    492      4    149 2018-08-04 19:26:58 UTC+0000
+.. 0xfffffa801abebb30:svchost.exe                     712    492      8    301 2018-08-04 19:26:17 UTC+0000
+.. 0xfffffa801ad718a0:svchost.exe                    1164    492     18    312 2018-08-04 19:26:23 UTC+0000
+.. 0xfffffa801ac31b30:svchost.exe                     844    492     17    396 2018-08-04 19:26:18 UTC+0000
+... 0xfffffa801b1fab30:dwm.exe                       2704    844      4     97 2018-08-04 19:27:04 UTC+0000
+.. 0xfffffa801988c2d0:PresentationFo                  724    492      6    148 2018-08-04 19:27:52 UTC+0000
+.. 0xfffffa801b603610:mscorsvw.exe                    412    492      7     86 2018-08-04 19:28:42 UTC+0000
+.. 0xfffffa8018e3c890:svchost.exe                     604    492     11    376 2018-08-04 19:26:16 UTC+0000
+... 0xfffffa8019124b30:WmiPrvSE.exe                  1800    604      9    222 2018-08-04 19:26:39 UTC+0000
+... 0xfffffa801b112060:WmiPrvSE.exe                  2136    604     12    324 2018-08-04 19:26:51 UTC+0000
+.. 0xfffffa801ad5ab30:spoolsv.exe                    1120    492     14    346 2018-08-04 19:26:22 UTC+0000
+.. 0xfffffa801ac4db30:svchost.exe                     868    492     45   1114 2018-08-04 19:26:18 UTC+0000
+.. 0xfffffa801a6e4b30:svchost.exe                    3196    492     14    352 2018-08-04 19:28:44 UTC+0000
+.. 0xfffffa801acd37e0:svchost.exe                     620    492     19    415 2018-08-04 19:26:21 UTC+0000
+.. 0xfffffa801b1e9b30:taskhost.exe                   2344    492      8    193 2018-08-04 19:26:57 UTC+0000
+.. 0xfffffa801ac97060:svchost.exe                    1012    492     12    554 2018-08-04 19:26:20 UTC+0000
+.. 0xfffffa801b3aab30:SearchIndexer.                 3064    492     11    610 2018-08-04 19:27:14 UTC+0000
+.. 0xfffffa801aff3b30:msdtc.exe                      1436    492     14    155 2018-08-04 19:26:43 UTC+0000
+. 0xfffffa801ab3f060:lsass.exe                        500    396      7    610 2018-08-04 19:26:12 UTC+0000
+. 0xfffffa801ab461a0:lsm.exe                          508    396     10    148 2018-08-04 19:26:12 UTC+0000
+ 0xfffffa801a0c8380:csrss.exe                         348    336      9    563 2018-08-04 19:26:10 UTC+0000
+. 0xfffffa801a6643d0:conhost.exe                     2420    348      0     30 2018-08-04 19:34:22 UTC+0000
+ 0xfffffa80198d3b30:csrss.exe                         388    380     11    460 2018-08-04 19:26:11 UTC+0000
+ 0xfffffa801aaf4060:winlogon.exe                      432    380      3    113 2018-08-04 19:26:11 UTC+0000
+ 0xfffffa801b18f060:WebCompanionIn                   3880   1484     15    522 2018-08-04 19:33:07 UTC+0000
+. 0xfffffa801aa72b30:sc.exe                          3504   3880      0 ------ 2018-08-04 19:33:48 UTC+0000
+. 0xfffffa801aeb6890:sc.exe                           452   3880      0 ------ 2018-08-04 19:33:48 UTC+0000
+. 0xfffffa801a6268b0:WebCompanion.e                  3856   3880     15    386 2018-08-04 19:34:05 UTC+0000
+. 0xfffffa801b08f060:sc.exe                          3208   3880      0 ------ 2018-08-04 19:33:47 UTC+0000
+. 0xfffffa801ac01060:sc.exe                          2028   3880      0 ------ 2018-08-04 19:33:49 UTC+0000
+ 0xfffffa801b1fd960:notepad.exe                      3304   3132      2     79 2018-08-04 19:34:10 UTC+0000
+
+
+4.netscan
+Offset(P)          Proto    Local Address                  Foreign Address      State            Pid      Owner          Created
+0x7d60f010         UDPv4    0.0.0.0:1900                   *:*                                   2836     BitTorrent.exe 2018-08-04 19:27:17 UTC+0000
+0x7d62b3f0         UDPv4    192.168.202.131:6771           *:*                                   2836     BitTorrent.exe 2018-08-04 19:27:22 UTC+0000
+0x7d62f4c0         UDPv4    127.0.0.1:62307                *:*                                   2836     BitTorrent.exe 2018-08-04 19:27:17 UTC+0000
+0x7d62f920         UDPv4    192.168.202.131:62306          *:*                                   2836     BitTorrent.exe 2018-08-04 19:27:17 UTC+0000
+0x7d6424c0         UDPv4    0.0.0.0:50762                  *:*                                   4076     chrome.exe     2018-08-04 19:33:37 UTC+0000
+0x7d6b4250         UDPv6    ::1:1900                       *:*                                   164      svchost.exe    2018-08-04 19:28:42 UTC+0000
+0x7d6e3230         UDPv4    127.0.0.1:6771                 *:*                                   2836     BitTorrent.exe 2018-08-04 19:27:22 UTC+0000
+0x7d6ed650         UDPv4    0.0.0.0:5355                   *:*                                   620      svchost.exe    2018-08-04 19:34:22 UTC+0000
+0x7d71c8a0         UDPv4    0.0.0.0:0                      *:*                                   868      svchost.exe    2018-08-04 19:34:22 UTC+0000
+0x7d71c8a0         UDPv6    :::0                           *:*                                   868      svchost.exe    2018-08-04 19:34:22 UTC+0000
+0x7d74a390         UDPv4    127.0.0.1:52847                *:*                                   2624     bittorrentie.e 2018-08-04 19:27:24 UTC+0000
+0x7d7602c0         UDPv4    127.0.0.1:52846                *:*                                   2308     bittorrentie.e 2018-08-04 19:27:24 UTC+0000
+0x7d787010         UDPv4    0.0.0.0:65452                  *:*                                   4076     chrome.exe     2018-08-04 19:33:42 UTC+0000
+0x7d789b50         UDPv4    0.0.0.0:50523                  *:*                                   620      svchost.exe    2018-08-04 19:34:22 UTC+0000
+0x7d789b50         UDPv6    :::50523                       *:*                                   620      svchost.exe    2018-08-04 19:34:22 UTC+0000
+0x7d92a230         UDPv4    0.0.0.0:0                      *:*                                   868      svchost.exe    2018-08-04 19:34:22 UTC+0000
+0x7d92a230         UDPv6    :::0                           *:*                                   868      svchost.exe    2018-08-04 19:34:22 UTC+0000
+0x7d9e8b50         UDPv4    0.0.0.0:20830                  *:*                                   2836     BitTorrent.exe 2018-08-04 19:27:15 UTC+0000
+0x7d9f4560         UDPv4    0.0.0.0:0                      *:*                                   3856     WebCompanion.e 2018-08-04 19:34:22 UTC+0000
+0x7d9f8cb0         UDPv4    0.0.0.0:20830                  *:*                                   2836     BitTorrent.exe 2018-08-04 19:27:15 UTC+0000
+0x7d9f8cb0         UDPv6    :::20830                       *:*                                   2836     BitTorrent.exe 2018-08-04 19:27:15 UTC+0000
+0x7d8bb390         TCPv4    0.0.0.0:9008                   0.0.0.0:0            LISTENING        4        System         
+0x7d8bb390         TCPv6    :::9008                        :::0                 LISTENING        4        System         
+0x7d9a9240         TCPv4    0.0.0.0:8733                   0.0.0.0:0            LISTENING        4        System         
+0x7d9a9240         TCPv6    :::8733                        :::0                 LISTENING        4        System         
+0x7d9e19e0         TCPv4    0.0.0.0:20830                  0.0.0.0:0            LISTENING        2836     BitTorrent.exe 
+0x7d9e19e0         TCPv6    :::20830                       :::0                 LISTENING        2836     BitTorrent.exe 
+0x7d9e1c90         TCPv4    0.0.0.0:20830                  0.0.0.0:0            LISTENING        2836     BitTorrent.exe 
+0x7d42ba90         TCPv4    -:0                            56.219.196.26:0      CLOSED           2836     BitTorrent.exe 
+0x7d6124d0         TCPv4    192.168.202.131:49530          77.102.199.102:7575  CLOSED           708      LunarMS.exe    
+0x7d62d690         TCPv4    192.168.202.131:49229          169.1.143.215:8999   CLOSED           2836     BitTorrent.exe 
+0x7d634350         TCPv6    -:0                            38db:c41a:80fa:ffff:38db:c41a:80fa:ffff:0 CLOSED           2836     BitTorrent.exe 
+0x7d6f27f0         TCPv4    192.168.202.131:50381          71.198.155.180:34674 CLOSED           2836     BitTorrent.exe 
+0x7d704010         TCPv4    192.168.202.131:50382          92.251.23.204:6881   CLOSED           2836     BitTorrent.exe 
+0x7d708cf0         TCPv4    192.168.202.131:50364          91.140.89.116:31847  CLOSED           2836     BitTorrent.exe 
+0x7d729620         TCPv4    -:50034                        142.129.37.27:24578  CLOSED           2836     BitTorrent.exe 
+0x7d72cbe0         TCPv4    192.168.202.131:50340          23.37.43.27:80       CLOSED           3496     Lavasoft.WCAss 
+0x7d7365a0         TCPv4    192.168.202.131:50358          23.37.43.27:80       CLOSED           3856     WebCompanion.e 
+0x7d81c890         TCPv4    192.168.202.131:50335          185.154.111.20:60405 CLOSED           2836     BitTorrent.exe 
+0x7d8fd530         TCPv4    192.168.202.131:50327          23.37.43.27:80       CLOSED           3496     Lavasoft.WCAss 
+0x7d9cecf0         TCPv4    192.168.202.131:50373          173.239.232.46:2997  CLOSED           2836     BitTorrent.exe 
+0x7d9d7cf0         TCPv4    192.168.202.131:50371          191.253.122.149:59163 CLOSED           2836     BitTorrent.exe 
+0x7daefec0         UDPv4    0.0.0.0:0                      *:*                                   3856     WebCompanion.e 2018-08-04 19:34:22 UTC+0000
+0x7daefec0         UDPv6    :::0                           *:*                                   3856     WebCompanion.e 2018-08-04 19:34:22 UTC+0000
+0x7db83b90         UDPv4    0.0.0.0:0                      *:*                                   3880     WebCompanionIn 2018-08-04 19:33:30 UTC+0000
+0x7db83b90         UDPv6    :::0                           *:*                                   3880     WebCompanionIn 2018-08-04 19:33:30 UTC+0000
+0x7db9cdd0         UDPv4    0.0.0.0:0                      *:*                                   2844     WebCompanion.e 2018-08-04 19:30:05 UTC+0000
+0x7db9cdd0         UDPv6    :::0                           *:*                                   2844     WebCompanion.e 2018-08-04 19:30:05 UTC+0000
+0x7dc2dc30         UDPv4    0.0.0.0:50879                  *:*                                   4076     chrome.exe     2018-08-04 19:30:41 UTC+0000
+0x7dc2dc30         UDPv6    :::50879                       *:*                                   4076     chrome.exe     2018-08-04 19:30:41 UTC+0000
+0x7dc83810         UDPv4    0.0.0.0:5355                   *:*                                   620      svchost.exe    2018-08-04 19:34:22 UTC+0000
+0x7dc83810         UDPv6    :::5355                        *:*                                   620      svchost.exe    2018-08-04 19:34:22 UTC+0000
+0x7dd82c30         UDPv4    0.0.0.0:5355                   *:*                                   620      svchost.exe    2018-08-04 19:26:38 UTC+0000
+0x7df00980         UDPv4    0.0.0.0:0                      *:*                                   620      svchost.exe    2018-08-04 19:34:22 UTC+0000
+0x7df00980         UDPv6    :::0                           *:*                                   620      svchost.exe    2018-08-04 19:34:22 UTC+0000
+0x7df04cc0         UDPv4    0.0.0.0:5355                   *:*                                   620      svchost.exe    2018-08-04 19:26:38 UTC+0000
+0x7df04cc0         UDPv6    :::5355                        *:*                                   620      svchost.exe    2018-08-04 19:26:38 UTC+0000
+0x7df5f010         UDPv4    0.0.0.0:55175                  *:*                                   620      svchost.exe    2018-08-04 19:34:22 UTC+0000
+0x7dfab010         UDPv4    0.0.0.0:58383                  *:*                                   620      svchost.exe    2018-08-04 19:34:22 UTC+0000
+0x7dfab010         UDPv6    :::58383                       *:*                                   620      svchost.exe    2018-08-04 19:34:22 UTC+0000
+0x7e12c1c0         UDPv4    0.0.0.0:0                      *:*                                   3880     WebCompanionIn 2018-08-04 19:33:27 UTC+0000
+0x7e163a40         UDPv4    0.0.0.0:0                      *:*                                   3880     WebCompanionIn 2018-08-04 19:33:27 UTC+0000
+0x7e163a40         UDPv6    :::0                           *:*                                   3880     WebCompanionIn 2018-08-04 19:33:27 UTC+0000
+0x7e1cf010         UDPv4    192.168.202.131:137            *:*                                   4        System         2018-08-04 19:26:35 UTC+0000
+0x7e1da010         UDPv4    192.168.202.131:138            *:*                                   4        System         2018-08-04 19:26:35 UTC+0000
+0x7dc4ad30         TCPv4    0.0.0.0:49155                  0.0.0.0:0            LISTENING        500      lsass.exe      
+0x7dc4ad30         TCPv6    :::49155                       :::0                 LISTENING        500      lsass.exe      
+0x7dc4b370         TCPv4    0.0.0.0:49155                  0.0.0.0:0            LISTENING        500      lsass.exe      
+0x7dd71010         TCPv4    0.0.0.0:445                    0.0.0.0:0            LISTENING        4        System         
+0x7dd71010         TCPv6    :::445                         :::0                 LISTENING        4        System         
+0x7ddca6b0         TCPv4    0.0.0.0:49156                  0.0.0.0:0            LISTENING        492      services.exe   
+0x7ddcbc00         TCPv4    0.0.0.0:49156                  0.0.0.0:0            LISTENING        492      services.exe   
+0x7ddcbc00         TCPv6    :::49156                       :::0                 LISTENING        492      services.exe   
+0x7de09c30         TCPv4    0.0.0.0:49152                  0.0.0.0:0            LISTENING        396      wininit.exe    
+0x7de09c30         TCPv6    :::49152                       :::0                 LISTENING        396      wininit.exe    
+0x7de0d7b0         TCPv4    0.0.0.0:49152                  0.0.0.0:0            LISTENING        396      wininit.exe    
+0x7de424e0         TCPv4    0.0.0.0:49153                  0.0.0.0:0            LISTENING        808      svchost.exe    
+0x7de45ef0         TCPv4    0.0.0.0:49153                  0.0.0.0:0            LISTENING        808      svchost.exe    
+0x7de45ef0         TCPv6    :::49153                       :::0                 LISTENING        808      svchost.exe    
+0x7df3d270         TCPv4    0.0.0.0:49154                  0.0.0.0:0            LISTENING        868      svchost.exe    
+0x7df3eef0         TCPv4    0.0.0.0:49154                  0.0.0.0:0            LISTENING        868      svchost.exe    
+0x7df3eef0         TCPv6    :::49154                       :::0                 LISTENING        868      svchost.exe    
+0x7e1f6010         TCPv4    0.0.0.0:135                    0.0.0.0:0            LISTENING        712      svchost.exe    
+0x7e1f6010         TCPv6    :::135                         :::0                 LISTENING        712      svchost.exe    
+0x7e1f8ef0         TCPv4    0.0.0.0:135                    0.0.0.0:0            LISTENING        712      svchost.exe    
+0x7db000a0         TCPv4    -:50091                        93.142.197.107:32645 CLOSED           2836     BitTorrent.exe 
+0x7db132e0         TCPv4    192.168.202.131:50280          72.55.154.81:80      CLOSED           3880     WebCompanionIn 
+0x7dbc3010         TCPv6    -:0                            4847:d418:80fa:ffff:4847:d418:80fa:ffff:0 CLOSED           4076     chrome.exe     
+0x7dc4bcf0         TCPv4    -:0                            104.240.179.26:0     CLOSED           3        ?4????       
+0x7dc83080         TCPv4    192.168.202.131:50377          179.108.238.10:19761 CLOSED           2836     BitTorrent.exe 
+0x7dd451f0         TCPv4    192.168.202.131:50321          45.27.208.145:51414  CLOSED           2836     BitTorrent.exe 
+0x7ddae890         TCPv4    -:50299                        212.92.105.227:8999  CLOSED           2836     BitTorrent.exe 
+0x7ddff010         TCPv4    192.168.202.131:50379          23.37.43.27:80       CLOSED           3856     WebCompanion.e 
+0x7e0057d0         TCPv4    192.168.202.131:50353          85.242.139.158:51413 CLOSED           2836     BitTorrent.exe 
+0x7e0114b0         TCPv4    192.168.202.131:50339          77.65.111.216:8306   CLOSED           2836     BitTorrent.exe 
+0x7e042cf0         TCPv4    192.168.202.131:50372          83.44.27.35:52103    CLOSED           2836     BitTorrent.exe 
+0x7e08a010         TCPv4    192.168.202.131:50374          89.46.49.163:20133   CLOSED           2836     BitTorrent.exe 
+0x7e092010         TCPv4    192.168.202.131:50378          120.29.114.41:13155  CLOSED           2836     BitTorrent.exe 
+0x7e094b90         TCPv4    192.168.202.131:50365          52.91.1.182:55125    CLOSED           2836     BitTorrent.exe 
+0x7e09ba90         TCPv6    -:0                            68f0:181b:80fa:ffff:68f0:181b:80fa:ffff:0 CLOSED           2836     BitTorrent.exe 
+0x7e0a8b90         TCPv4    192.168.202.131:50341          72.55.154.81:80      CLOSED           3880     WebCompanionIn 
+0x7e0d6180         TCPv4    192.168.202.131:50349          196.250.217.22:32815 CLOSED           2836     BitTorrent.exe 
+0x7e108100         TCPv4    192.168.202.131:50360          174.0.234.77:31240   CLOSED           2836     BitTorrent.exe 
+0x7e124910         TCPv4    192.168.202.131:50366          89.78.106.196:51413  CLOSED           2836     BitTorrent.exe 
+0x7e14dcf0         TCPv4    192.168.202.131:50363          122.62.218.159:11627 CLOSED           2836     BitTorrent.exe 
+0x7e18bcf0         TCPv4    192.168.202.131:50333          191.177.124.34:21011 CLOSED           2836     BitTorrent.exe 
+0x7e1f7ab0         TCPv4    -:0                            56.187.190.26:0      CLOSED           3        ?4????       
+0x7e48d9c0         UDPv6    fe80::b06b:a531:ec88:457f:1900 *:*                                   164      svchost.exe    2018-08-04 19:28:42 UTC+0000
+0x7e4ad870         UDPv4    127.0.0.1:1900                 *:*                                   164      svchost.exe    2018-08-04 19:28:42 UTC+0000
+0x7e511bb0         UDPv4    0.0.0.0:60005                  *:*                                   620      svchost.exe    2018-08-04 19:34:22 UTC+0000
+0x7e5dc3b0         UDPv6    fe80::b06b:a531:ec88:457f:546  *:*                                   808      svchost.exe    2018-08-04 19:33:28 UTC+0000
+0x7e7469c0         UDPv4    0.0.0.0:50878                  *:*                                   4076     chrome.exe     2018-08-04 19:30:39 UTC+0000
+0x7e7469c0         UDPv6    :::50878                       *:*                                   4076     chrome.exe     2018-08-04 19:30:39 UTC+0000
+0x7e77cb00         UDPv4    0.0.0.0:50748                  *:*                                   4076     chrome.exe     2018-08-04 19:30:07 UTC+0000
+0x7e77cb00         UDPv6    :::50748                       *:*                                   4076     chrome.exe     2018-08-04 19:30:07 UTC+0000
+0x7e79f3f0         UDPv4    0.0.0.0:5353                   *:*                                   4076     chrome.exe     2018-08-04 19:29:35 UTC+0000
+0x7e7a0ec0         UDPv4    0.0.0.0:5353                   *:*                                   4076     chrome.exe     2018-08-04 19:29:35 UTC+0000
+0x7e7a0ec0         UDPv6    :::5353                        *:*                                   4076     chrome.exe     2018-08-04 19:29:35 UTC+0000
+0x7e7a3960         UDPv4    0.0.0.0:0                      *:*                                   3880     WebCompanionIn 2018-08-04 19:33:30 UTC+0000
+0x7e7dd010         UDPv6    ::1:58340                      *:*                                   164      svchost.exe    2018-08-04 19:28:42 UTC+0000
+0x7e413a40         TCPv4    -:0                            -:0                  CLOSED           708      LunarMS.exe    
+0x7e415010         TCPv4    192.168.202.131:50346          89.64.10.176:10589   CLOSED           2836     BitTorrent.exe 
+0x7e4202d0         TCPv4    192.168.202.131:50217          104.18.21.226:80     CLOSED           3880     WebCompanionIn 
+0x7e45f110         TCPv4    192.168.202.131:50211          104.18.20.226:80     CLOSED           3880     WebCompanionIn 
+0x7e4cc910         TCPv4    192.168.202.131:50228          104.18.20.226:80     CLOSED           3880     WebCompanionIn 
+0x7e512950         TCPv4    192.168.202.131:50345          77.126.30.221:13905  CLOSED           2836     BitTorrent.exe 
+0x7e521b50         TCPv4    -:0                            -:0                  CLOSED           708      LunarMS.exe    
+0x7e5228d0         TCPv4    192.168.202.131:50075          70.65.116.120:52700  CLOSED           2836     BitTorrent.exe 
+0x7e52f010         TCPv4    192.168.202.131:50343          86.121.4.189:46392   CLOSED           2836     BitTorrent.exe 
+0x7e563860         TCPv4    192.168.202.131:50170          103.232.25.44:25384  CLOSED           2836     BitTorrent.exe 
+0x7e572cf0         TCPv4    192.168.202.131:50125          122.62.218.159:11627 CLOSED           2836     BitTorrent.exe 
+0x7e5d6cf0         TCPv4    192.168.202.131:50324          54.197.8.177:49420   CLOSED           2836     BitTorrent.exe 
+0x7e71b010         TCPv4    192.168.202.131:50344          70.27.98.75:6881     CLOSED           2836     BitTorrent.exe 
+0x7e71d010         TCPv4    192.168.202.131:50351          99.251.199.160:1045  CLOSED           2836     BitTorrent.exe 
+0x7e74b010         TCPv4    192.168.202.131:50385          209.236.6.89:56500   CLOSED           2836     BitTorrent.exe 
+0x7e78b7f0         TCPv4    192.168.202.131:50238          72.55.154.82:80      CLOSED           3880     WebCompanionIn 
+0x7e7ae380         TCPv4    192.168.202.131:50361          5.34.21.181:8999     CLOSED           2836     BitTorrent.exe 
+0x7e7b0380         TCPv6    -:0                            4847:d418:80fa:ffff:4847:d418:80fa:ffff:0 CLOSED           2836     BitTorrent.exe 
+0x7e7b9010         TCPv4    192.168.202.131:50334          188.129.94.129:25128 CLOSED           2836     BitTorrent.exe 
+0x7e94b010         TCPv4    192.168.202.131:50356          77.126.30.221:13905  CLOSED           2836     BitTorrent.exe 
+0x7e9ad840         TCPv4    192.168.202.131:50380          84.52.144.29:56299   CLOSED           2836     BitTorrent.exe 
+0x7e9bacf0         TCPv4    192.168.202.131:50350          77.253.242.0:5000    CLOSED           2836     BitTorrent.exe 
+0x7eaac5e0         TCPv4    192.168.202.131:50387          93.184.220.29:80     CLOSED           3856     WebCompanion.e 
+0x7eab4cf0         TCPv4    -:0                            56.219.196.26:0      CLOSED           2836     BitTorrent.exe 
+0x7fb9cec0         UDPv4    192.168.202.131:1900           *:*                                   164      svchost.exe    2018-08-04 19:28:42 UTC+0000
+0x7fb9d430         UDPv4    127.0.0.1:58341                *:*                                   164      svchost.exe    2018-08-04 19:28:42 UTC+0000
+
+
+6.hivescan
+Virtual            Physical           Name
+------------------ ------------------ ----
+0xfffff8a00377d2d0 0x00000000624162d0 \??\C:\System Volume Information\Syscache.hve
+0xfffff8a00000f010 0x000000002d4c1010 [no name]
+0xfffff8a000024010 0x000000002d50c010 \REGISTRY\MACHINE\SYSTEM
+0xfffff8a000053320 0x000000002d5bb320 \REGISTRY\MACHINE\HARDWARE
+0xfffff8a000109410 0x0000000029cb4410 \SystemRoot\System32\Config\SECURITY
+0xfffff8a00033d410 0x000000002a958410 \Device\HarddiskVolume1\Boot\BCD
+0xfffff8a0005d5010 0x000000002a983010 \SystemRoot\System32\Config\SOFTWARE
+0xfffff8a001495010 0x0000000024912010 \SystemRoot\System32\Config\DEFAULT
+0xfffff8a0016d4010 0x00000000214e1010 \SystemRoot\System32\Config\SAM
+0xfffff8a00175b010 0x00000000211eb010 \??\C:\Windows\ServiceProfiles\NetworkService\NTUSER.DAT
+0xfffff8a00176e410 0x00000000206db410 \??\C:\Windows\ServiceProfiles\LocalService\NTUSER.DAT
+0xfffff8a002090010 0x000000000b92b010 \??\C:\Users\Rick\ntuser.dat
+0xfffff8a0020ad410 0x000000000db41410 \??\C:\Users\Rick\AppData\Local\Microsoft\Windows\UsrClass.dat
+
+
+7.Significant Registry
+Legend: (S) = Stable   (V) = Volatile
+
+----------------------------
+Registry: \REGISTRY\MACHINE\SYSTEM
+Key name: ActiveComputerName (V)
+Last updated: 2018-08-04 19:26:11 UTC+0000
+
+Subkeys:
+
+Values:
+REG_SZ        ComputerName    : (V) WIN-LO6FAF3DTFE 
 
 
