@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # 2018/11/05 START
 # How to Use?
-# $ python vap.py -f [FILE]
+# $ python vat.py -f [FILE]
 
 import os
 import sys
@@ -17,7 +17,7 @@ parser.add_option("-o","--object",type="string",dest="object",help="write Addres
 file = option.FILE
 
 if(len(sys.argv) <= 1): # 인자 값이 1이상
-	print("HELP : python vap.py -h 또는 --help")
+	print("HELP : python vat.py -h 또는 --help")
 	exit()
 
 if option == None:
@@ -32,11 +32,10 @@ def getSystemInfo():
 			line = line.split(",")[0]
 			line = line.strip()
 			print "[*] System Profile : " + line
-
 			return line
 
 def getMalInfo(procName):
-    f = open("default_scan.txt")
+    f = open("Analysis.txt.txt")
     list1 = []
     for line in f.readlines():
         if(line.find("Process")!=-1):
