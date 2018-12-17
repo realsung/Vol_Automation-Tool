@@ -6,7 +6,7 @@
 
 import os
 import sys
-from optparse import OptionParser 
+from optparse import OptionParser
 
 def getSystemInfo():
 	f = open("Analysis.txt")
@@ -24,7 +24,38 @@ def getSysRegistryInfo():
 		if(line.find("\\REGISTRY\\MACHINE\\SYSTEM")!=-1):
 			line = line.split(" ")[0]
 			line = line.strip()
+			print "[*] SYSTEM Registry Virtual Adress : " + line
 			return line
+
+def getSoftRegistryInfo():
+	f = open("Analysis.txt")
+	for line in f.readlines():
+		if(line.find("\\SystemRoot\\System32\\Config\\SOFTWARE")!=-1):
+			line = line.split(" ")[0]
+			line = line.strip()
+			print "[*] SOFTWARE Registry Virtual Adress : " + line
+			return line
+
+def lastExitRegistryInfo():
+	f = open("Analysis.txt")
+	info = ""
+	for line in f.readlines():
+		if(line.find("Last updated:")!=-1):
+			info += line.split()[2]
+			info += " "
+			info += line.split()[3]
+			info += " "
+			info += line.split()[4]
+			print "[*] Computer Last ShutdownTime : " + info
+			return info
+
+# def changeTimeInfo():
+# 	time = lastExitRegistryInfo()
+# 	nt_timestamp = struct.unpack("<Q", unhexlify(time))[0]
+# 	epoch = datetime(1601, 1, 1, 0, 0, 0)
+# 	nt_datetime = epoch + timedelta(microseconds=nt_timestamp / 10)
+# 	print(nt_datetime.strftime("%c"))
+# 	#return nt_datetime.strftime("%c")
 
 def memoryAnalysis():
 	parser = OptionParser('''python vap.py -f [FILE]''')
@@ -46,23 +77,24 @@ def memoryAnalysis():
 		os.system("echo >> Analysis.txt")
 		os.system("echo >> Analysis.txt")
 
-		# psxview
-		os.system("echo 2.psxview >> Analysis.txt")
-		os.system("vol.py -f " + file + " psxview " + profile + " >> Analysis.txt")
-		os.system("echo >> Analysis.txt")
-		os.system("echo >> Analysis.txt")
+		#command /
+		# # psxview
+		# os.system("echo 2.psxview >> Analysis.txt")
+		# os.system("vol.py -f " + file + " psxview " + profile + " >> Analysis.txt")
+		# os.system("echo >> Analysis.txt")
+		# os.system("echo >> Analysis.txt")
 
-		# pstree
-		os.system("echo 3.pstree >> Analysis.txt")
-		os.system("vol.py -f " + file + " pstree " + profile + " >> Analysis.txt")
-		os.system("echo >> Analysis.txt")
-		os.system("echo >> Analysis.txt")
+		# # pstree
+		# os.system("echo 3.pstree >> Analysis.txt")
+		# os.system("vol.py -f " + file + " pstree " + profile + " >> Analysis.txt")
+		# os.system("echo >> Analysis.txt")
+		# os.system("echo >> Analysis.txt")
 
-		#netscan
-		os.system("echo 4.netscan >> Analysis.txt")
-		os.system("vol.py -f " + file + " netscan " + profile + " >> Analysis.txt")
-		os.system("echo >> Analysis.txt")
-		os.system("echo >> Analysis.txt")
+		# #netscan
+		# os.system("echo 4.netscan >> Analysis.txt")
+		# os.system("vol.py -f " + file + " netscan " + profile + " >> Analysis.txt")
+		# os.system("echo >> Analysis.txt")
+		# os.system("echo >> Analysis.txt")
 
 		#hivelist
 		os.system("echo 6.hivescan >> Analysis.txt")
@@ -70,14 +102,29 @@ def memoryAnalysis():
 		os.system("echo >> Analysis.txt")
 		os.system("echo >> Analysis.txt")
 
-		regkey = getSysRegistryInfo()
+		sysRegkey = getSysRegistryInfo()
 
 		#printkey
 		#컴퓨터 이름 출력
-		os.system("echo 7.Significant Registry  >> Analysis.txt")
-		os.system("vol.py -f " + file + " printkey -o " + regkey + " -K \\ControlSet001\\\\Control\\\\ComputerName\\\\ActiveComputerName " + profile + " >> Analysis.txt")
+		os.system("echo [*]컴퓨터 이름 >> Analysis.txt")
+		os.system("vol.py -f " + file + " printkey -o " + sysRegkey + " -K \\ControlSet001\\\\Control\\\\ComputerName\\\\ActiveComputerName " + profile + " >> Analysis.txt")
 		os.system("echo >> Analysis.txt")
 		os.system("echo >> Analysis.txt")
+
+		os.system("echo [*]시스템 종료 시간 >> Analysis.txt")
+		os.system("vol.py -f " + file + " printkey -o " + sysRegkey + " -K \\ControlSet001\\\\Control\\\\Windows " + profile + " >>Analysis.txt")
+		os.system("echo >> Analysis.txt")
+		os.system("echo >> Analysis.txt")
+
+		lastExitRegistryInfo()
+
+		sofRegkey = getSoftRegistryInfo()
+
+		#os.system("echo Registry2 >> Analysis.txt")
+		#os.system("vol.py -f " + file + " printkey -o " + sofRegkey + " -K \\Microsoft\\\\Windows NT\\\\CurrentVersion\\\\Windows Search " + profile + " >> Analysis.txt")
+		#os.system("echo >> Analysis.txt")
+		#os.system("echo >> Analysis.txt")
+
 
 if __name__ == '__main__':
 	if(len(sys.argv) <= 1): # 인자 값이 1이상
