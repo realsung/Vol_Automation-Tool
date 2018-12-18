@@ -74,28 +74,26 @@ def memoryAnalysis():
 		os.system("vol.py -f " + file + " imageinfo >> Analysis.txt")
 		profile = "--profile="
 		profile += getSystemInfo()
-
 		os.system("echo >> Analysis.txt")
 		os.system("echo >> Analysis.txt")
 
-		#command /
-		# # psxview
-		# os.system("echo 2.psxview >> Analysis.txt")
-		# os.system("vol.py -f " + file + " psxview " + profile + " >> Analysis.txt")
-		# os.system("echo >> Analysis.txt")
-		# os.system("echo >> Analysis.txt")
+		# psxview
+		os.system("echo 2.psxview >> Analysis.txt")
+		os.system("vol.py -f " + file + " psxview " + profile + " >> Analysis.txt")
+		os.system("echo >> Analysis.txt")
+		os.system("echo >> Analysis.txt")
 
-		# # pstree
-		# os.system("echo 3.pstree >> Analysis.txt")
-		# os.system("vol.py -f " + file + " pstree " + profile + " >> Analysis.txt")
-		# os.system("echo >> Analysis.txt")
-		# os.system("echo >> Analysis.txt")
+		# pstree
+		os.system("echo 3.pstree >> Analysis.txt")
+		os.system("vol.py -f " + file + " pstree " + profile + " >> Analysis.txt")
+		os.system("echo >> Analysis.txt")
+		os.system("echo >> Analysis.txt")
 
-		# #netscan
-		# os.system("echo 4.netscan >> Analysis.txt")
-		# os.system("vol.py -f " + file + " netscan " + profile + " >> Analysis.txt")
-		# os.system("echo >> Analysis.txt")
-		# os.system("echo >> Analysis.txt")
+		#netscan
+		os.system("echo 4.netscan >> Analysis.txt")
+		os.system("vol.py -f " + file + " netscan " + profile + " >> Analysis.txt")
+		os.system("echo >> Analysis.txt")
+		os.system("echo >> Analysis.txt")
 
 		#hivelist
 		os.system("echo 6.hivescan >> Analysis.txt")
@@ -119,37 +117,14 @@ def memoryAnalysis():
 
 		lastExitRegistryInfo()
 
-		sofRegkey = getSoftRegistryInfo()
+		softRegkey = getSoftRegistryInfo()
 
-		#os.system("echo Registry2 >> Analysis.txt")
-		#os.system("vol.py -f " + file + " printkey -o " + sofRegkey + " -K \\Microsoft\\\\Windows NT\\\\CurrentVersion\\\\Windows Search " + profile + " >> Analysis.txt")
-		#os.system("echo >> Analysis.txt")
-		#os.system("echo >> Analysis.txt")
+		os.system("echo Registry2 >> Analysis.txt")
+		os.system("vol.py -f " + file + " printkey -o " + softRegkey + " -K \\Microsoft\\\\Windows NT\\\\CurrentVersion\\\\Windows Search " + profile + " >> Analysis.txt")
+		os.system("echo >> Analysis.txt")
+		os.system("echo >> Analysis.txt")
 
-
-if __name__ == '__main__':
-
-#  __  __             ___                 __              ___              __                             ____                                            
-# /\ \/\ \           /\_ \               /\ \__    __    /\_ \      __    /\ \__                         /\  _`\                                          
-# \ \ \ \ \    ___   \//\ \       __     \ \ ,_\  /\_\   \//\ \    /\_\   \ \ ,_\   __  __               \ \ \L\ \   __      _ __    ____     __    _ __  
-#  \ \ \ \ \  / __`\   \ \ \    /'__`\    \ \ \/  \/\ \    \ \ \   \/\ \   \ \ \/  /\ \/\ \               \ \ ,__/ /'__`\   /\`'__\ /',__\  /'__`\ /\`'__\
-#   \ \ \_/ \/\ \L\ \   \_\ \_ /\ \L\.\_   \ \ \_  \ \ \    \_\ \_  \ \ \   \ \ \_ \ \ \_\ \               \ \ \/ /\ \L\.\_ \ \ \/ /\__, `\/\  __/ \ \ \/ 
-#    \ `\___/\ \____/   /\____\\ \__/.\_\   \ \__\  \ \_\   /\____\  \ \_\   \ \__\ \/`____ \               \ \_\ \ \__/.\_\ \ \_\ \/\____/\ \____\ \ \_\ 
-#     `\/__/  \/___/    \/____/ \/__/\/_/    \/__/   \/_/   \/____/   \/_/    \/__/  `/___/> \               \/_/  \/__/\/_/  \/_/  \/___/  \/____/  \/_/ 
-#                                                                                       /\___/                                                            
-#                                                                                       \/__/                                                             
-
-
-#  ____                                            
-# /\  _`\                                          
-# \ \ \L\ \   __      _ __    ____     __    _ __  
-#  \ \ ,__/ /'__`\   /\`'__\ /',__\  /'__`\ /\`'__\
-#   \ \ \/ /\ \L\.\_ \ \ \/ /\__, `\/\  __/ \ \ \/ 
-#    \ \_\ \ \__/.\_\ \ \_\ \/\____/\ \____\ \ \_\ 
-#     \/_/  \/__/\/_/  \/_/  \/___/  \/____/  \/_/ 
-                                                 
-                                                 
-
+if __name__ == '__main__':                                        
 	rot13 = string.maketrans( 
     "ABCDEFGHIJKLMabcdefghijklmNOPQRSTUVWXYZnopqrstuvwxyz", 
     "NOPQRSTUVWXYZnopqrstuvwxyzABCDEFGHIJKLMabcdefghijklm")
