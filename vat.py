@@ -110,6 +110,7 @@ def memoryAnalysis():
 		os.system("echo >> Analysis.txt")
 		os.system("echo >> Analysis.txt")
 
+		#시스템 종료 시간
 		os.system("echo [*]시스템 종료 시간 >> Analysis.txt")
 		os.system("vol.py -f " + file + " printkey -o " + sysRegkey + " -K \\ControlSet001\\\\Control\\\\Windows " + profile + " >>Analysis.txt")
 		os.system("echo >> Analysis.txt")
@@ -118,7 +119,7 @@ def memoryAnalysis():
 		lastExitRegistryInfo()
 
 		softRegkey = getSoftRegistryInfo()
-
+	
 		os.system("echo Registry2 >> Analysis.txt")
 		os.system("vol.py -f " + file + " printkey -o " + softRegkey + " -K \\Microsoft\\\\Windows NT\\\\CurrentVersion\\\\Windows Search " + profile + " >> Analysis.txt")
 		os.system("echo >> Analysis.txt")
